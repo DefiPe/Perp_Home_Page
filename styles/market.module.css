@@ -1,0 +1,108 @@
+.head {
+  margin: 4rem 10rem;
+}
+
+.head h3 {
+  font-family: raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%; /* 67.2px */
+  text-transform: capitalize;
+  background: linear-gradient(
+    90deg,
+    #fff 46.28%,
+    rgba(255, 255, 255, 0.2) 104.96%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head p {
+  /* width: 1200px; */
+  color: #a6aab2;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next row if necessary */
+  justify-content: space-between; /* Adjusts spacing between cards */
+  gap: 5px; /* Decrease the space between cards even more */
+}
+
+.card {
+  flex: 1;
+  width: 20rem;
+  padding: 20px;
+  border-radius: 20px;
+  background: #212131;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto; /* Pushes logo to the right */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+}
+
+@media (max-width: 700px) {
+  .head {
+    margin: 4rem 0rem;
+    width: 94%;
+    margin: auto;
+  }
+
+  .head h3 {
+    font-family: raleway;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: capitalize;
+    background: linear-gradient(
+      90deg,
+      #fff 46.28%,
+      rgba(255, 255, 255, 0.2) 80.96%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .head p {
+    color: #a6aab2;
+    font-family: Inter;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-align: left;
+  }
+}
+
+/* git filter-branch --env-filter '
+OLD_EMAIL="samratmukh@gmail.com"
+NEW_NAME="Samrat-Mukherjee"
+NEW_EMAIL="samrat.mukherjee2022@gmail.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+  export GIT_COMMITTER_NAME="$NEW_NAME"
+  export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+  export GIT_AUTHOR_NAME="$NEW_NAME"
+  export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags */

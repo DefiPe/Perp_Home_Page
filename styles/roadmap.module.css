@@ -1,0 +1,115 @@
+.head {
+    margin: 4rem 10rem;
+  }
+  
+  .head h3 {
+    font-family: raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%; /* 67.2px */
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #FFF 46.28%, rgba(255, 255, 255, 0.20) 80.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .head p {
+    color: #A6AAB2;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
+  }
+  
+  .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .content img{
+    background-size: cover;
+    background-position: center top -1px;
+    width: 100%;
+  position: relative;
+  top: -38rem; /* Adjust the value as needed to move the image upwards */
+  }
+  
+  
+  .verticalLine {
+    border-left: 1px solid #ccc;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%; /* Center the container */
+    top: 10%; /* Adjust the top position to align the cards */
+    transform: translateX(-50%); /* Center the container */
+  }
+  
+  .card {
+    width: 434px;
+    height: 180px;
+    border-radius: 8px;
+    border: 2px solid rgba(64, 224, 208, 0.50);
+    background: #212131;
+    margin-bottom: 20px; /* Adjust the margin between cards */
+    padding: 20px; /* Add padding for content */
+  }
+  
+  .card h4 {
+color: #40E0D0;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Additional styles for positioning cards */
+  .card.left1 {
+    position: absolute;
+    left: -33rem; /* Adjust the distance from the vertical line */
+    top: -15rem; /* Align the card with the top of the container */
+  }
+  
+  .card.right1 {
+    position: absolute;
+    right: -474px; /* Adjust the distance from the vertical line */
+    top:2px; /* Adjust the top position */
+  }
+
+  .card.left2 {
+    position: absolute;
+    left: -33rem; /* Adjust the distance from the vertical line */
+    top: 12rem; /* Align the card with the top of the container */
+  }
+  
+  .card.right2 {
+    position: absolute;
+    right: -474px; /* Adjust the distance from the vertical line */
+    top: 25rem; /* Adjust the top position */
+  }
+  
+
+
+  

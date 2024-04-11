@@ -1,0 +1,198 @@
+.header {
+  margin: 26rem auto 0rem auto;
+  max-width: 64rem;
+}
+
+.header h3 {
+  font-family: raleway;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%; /* 67.2px */
+  text-transform: capitalize;
+  background: linear-gradient(
+    90deg,
+    #fff 46.28%,
+    rgba(255, 255, 255, 0.2) 80.96%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  color: #a6aab2;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+
+
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the container horizontally */
+  margin: 6rem auto; /* Center the container vertically and adjust margin */
+  max-width: 64rem; /* Optional: Set maximum width for better responsiveness */
+}
+
+.card {
+  width: calc(50% - 1rem); /* Adjust width to fit two cards in a row */
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f0f0f0; /* Background color for the card */
+  border-radius: 18.803px;
+  background: linear-gradient(
+    141deg,
+    #393a74 -18.15%,
+    #321c61 60.39%,
+    #1e0552 111.35%
+  );
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.card img {
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  width: 15.6rem;
+  height: 15.6rem;
+}
+
+.card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  width: 24.8rem;
+  height: 4.4rem;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  text-transform: capitalize;
+}
+
+.card p {
+  text-align: center; /* Center text horizontally */
+  color: #cdcdcd;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+
+/* Add space between the cards */
+.card:nth-child(odd) {
+  margin-right: 2rem;
+}
+
+.card:nth-child(2n) {
+  margin-right: 0;
+}
+@media (min-width: 701px) {
+    .cardContainerMob{
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+  .card {
+    margin-right: 0 !important;
+  }
+
+  .cardContainer {
+    display: none;
+  }
+
+  .header h3 {
+    font-family: raleway;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 67.2px */
+    text-transform: capitalize;
+    background: linear-gradient(
+      90deg,
+      #fff 46.28%,
+      rgba(255, 255, 255, 0.2) 80.96%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header {
+    margin: 0rem;
+    max-width: none;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .header p {
+    color: #a6aab2;
+    font-family: Inter;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-align: left;
+  }
+
+  .cardMob {
+    width: 94%;
+    height: 13rem;
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f0f0f0; /* Background color for the card */
+    border-radius: 18.803px;
+    background: linear-gradient(
+      141deg,
+      #393a74 -18.15%,
+      #321c61 60.39%,
+      #1e0552 111.35%
+    );
+  }
+
+  .cardMob img {
+    border-radius: 0.4rem;
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 99px;
+    right: 0px;
+  }
+
+  .cardMob h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    /* width: 24.8rem;
+    height: 4.4rem; */
+    color: #fff;
+    text-align: left;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 31.2px */
+    text-transform: capitalize;
+  }
+
+  .cardMob p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    color: #cdcdcd;
+  }
+}

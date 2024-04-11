@@ -1,0 +1,357 @@
+.magicButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto; /* Adjusted the margin */
+  width: 25rem;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 32px;
+  border: 1px solid #b324de;
+  background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(0, 0, 0, 0.5) 50.03%,
+      #b324de 100%
+    ),
+    rgba(255, 255, 255, 0.1);
+}
+.magicButton p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem; /* 133.333% */
+}
+
+/* .heroh2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+} */
+
+.heroh2 p {
+  color: #a6aab2;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+}
+
+.icon {
+  width: 24px; /* Adjust the width of the icon as needed */
+  height: 24px; /* Adjust the height of the icon as needed */
+  margin-right: 10px; /* Adjust the spacing between the icon and the text */
+}
+.container {
+  justify-content: space-around;
+  margin: 20px 0; /* Adjusted the margin */
+}
+
+/* .heroh1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 1rem 0; 
+
+  font-family: "Madimi One";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 140%;
+ 
+  text-transform: capitalize;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff 46.28%,
+    rgba(255, 255, 255, 0.2) 80.96%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+} */
+
+.heroh1 h1 {
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  line-height: 140%; /* 67.2px */
+  background: linear-gradient(91deg, #ff1cf7 2.26%, #00f0ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5.1rem;
+  font-weight: 700;
+  /* line-height: 88px; */
+  letter-spacing: 0.02em;
+}
+
+.heroTexts {
+  display: flex;
+  align-items: center; /* Center the items horizontally */
+  justify-content: center; /* Center the items vertically */
+  margin: 1.5rem 0; /* Adjusted the margin between hero2 and heroTexts */
+}
+
+.heroText {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem; /* Adjusted the margin between the texts */
+}
+
+.textIcon {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px; /* Adjust the spacing between the icon and the text */
+}
+
+.heroText p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* Adjusted the line height */
+  color: #fff;
+}
+.heroButtons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center;
+  margin: 1rem 0; /* Adjusted the margin between heroTexts and heroButtons */
+}
+.button {
+  margin: 0 1rem; /* Adjusted the margin between the buttons */
+  padding: 0.7rem 1.2rem; /* Adjusted the padding for the buttons */
+  font-size: 1rem; /* Adjusted the font size for the buttons */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Add pointer cursor */
+}
+
+.button:first-child {
+  display: flex;
+  max-width: 21.5rem;
+  padding: 1rem 1.8rem 1rem 1.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  border-radius: 48px;
+  background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #0a7cff;
+  box-shadow: 0px 16px 32px -8px rgba(10, 124, 255, 0.48),
+    0px 4px 8px 0px rgba(10, 124, 255, 0.12),
+    0px 2px 6px 0px rgba(10, 124, 255, 0.24),
+    0px 1px 3px 0px rgba(10, 124, 255, 0.24),
+    1px 1px 2px 0px rgba(255, 255, 255, 0.24) inset;
+}
+
+.button:last-child {
+  display: flex;
+  width: 10.3rem;
+  padding: 1rem 1.8rem 1rem 1.4rem;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 48px;
+  background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset,
+    1px 1px 0px 0px rgba(255, 255, 255, 0.08) inset,
+    0px 8px 40px -20px rgba(255, 255, 255, 0.2);
+}
+
+.background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align the image to the bottom */
+  width: auto;
+  height: 30rem;
+  /* background-image: url("../public/hero.svg");
+    object-fit: cover;
+    background-repeat: no-repeat; */
+}
+
+.backgroundImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlayImage {
+  width: 50%; /* Adjust the size of the overlay image */
+  max-width: 1000px; /* Set a maximum width if needed */
+  height: auto;
+  position: absolute; /* Use absolute positioning */
+  top: 65%; /* Adjust the percentage to move the image further down */
+  left: 50%; /* Center the image horizontally */
+  transform: translate(-50%, -50%); /* Center the image vertically */
+  z-index: 2;
+}
+
+.feature {
+  width: 100%; /* Adjust the size of the overlay image */
+  max-width: 1500px; /* Set a maximum width if needed */
+  height: auto;
+  position: absolute; /* Use absolute positioning */
+  top: 135%; /* Adjust the percentage to move the image further down */
+  left: 43%; /* Center the image horizontally */
+  transform: translate(-50%, -50%); /* Center the image vertically */
+  z-index: 2;
+}
+
+.cardSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0; /* Adjusted margin for spacing */
+  margin-top: 90rem;
+}
+
+.card {
+  width: 200px; /* Adjust the width of the cards as needed */
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cardIcon {
+  width: 24px; /* Adjust the width of the icon as needed */
+  height: 24px; /* Adjust the height of the icon as needed */
+  margin-bottom: 10px; /* Adjust the spacing between the icon and the heading */
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .heroh1 h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    text-align: center;
+
+    /* line-height: 140%; */
+    background: linear-gradient(91deg, #ff1cf7 2.26%, #00f0ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-size: 5.1rem; */
+    /* font-weight: 800; */
+    /* line-height: 88px; */
+    /* letter-spacing: 0.02em; */
+
+    font-size: 1.6rem;
+    line-height: 29.4px;
+    letter-spacing: 0.02em;
+  }
+
+  .heroh1 span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.4px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: white;
+  }
+
+  .heroh2 p {
+    color: #a6aab2;
+
+    /* text-align: center; */
+    /* font-family: Inter; */
+    /* font-size: 24px; */
+    font-style: normal;
+    /* font-weight: 500; */
+    /* line-height: 24px; */
+
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .heroText p {
+    font-family: "Inter";
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1rem;
+    color: #fff;
+  }
+
+  .textIcon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 6px;
+  }
+
+  .heroTexts {
+    display: flex;
+    align-items: center; /* Center the items horizontally */
+    justify-content: space-around; /* Center the items vertically */
+    margin: 1.5rem 0; /* Adjusted the margin between hero2 and heroTexts */
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .button:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .overlayImage {
+    width: 80%; /* Adjust the size of the overlay image */
+    max-width: 1000px; /* Set a maximum width if needed */
+    height: auto;
+    position: absolute; /* Use absolute positioning */
+    top: 40%; /* Adjust the percentage to move the image further down */
+    left: 50%; /* Center the image horizontally */
+    transform: translate(-50%, -50%); /* Center the image vertically */
+    z-index: 2;
+  }
+
+  .backgroundImage {
+    height: 100%;
+  }
+
+  .background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align the image to the bottom */
+    width: auto;
+    height: 20rem;
+  }
+}

@@ -1,0 +1,122 @@
+.newsLetter {
+  margin-top: 6rem;
+ margin-bottom: 7rem;
+}
+
+.newsletterDiv {
+  max-width: 64rem;
+  margin: 2rem auto;
+}
+
+.newsletterDiv h3 {
+  font-family: raleway;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%;
+  text-transform: capitalize;
+  background: linear-gradient(
+    90deg,
+    #fff 46.28%,
+    rgba(255, 255, 255, 0.2) 80.96%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.newsletterDiv p {
+  color: #a6aab2;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 1.4rem;
+}
+
+.newsDiv {
+  position: relative;
+}
+
+.newsInput {
+  width: 80%;
+  height: 3rem;
+  background-color: white;
+  border: none;
+  padding-left: 2rem;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+  color: #57656c;
+}
+
+.newsButton {
+  width: 12.8rem;
+  height: 4.4rem;
+  /* top: 1402.3px;
+  left: 588px; */
+  gap: 0px;
+  opacity: 0px;
+  background: #152329;
+  position: absolute;
+  border: none;
+  top: 1.3rem;
+  right: 160px;
+  /* left: 40.1rem; */
+  color: white;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 7.68px;
+  letter-spacing: 0.16em;
+  cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+
+  .newsLetter {
+    width: 94%;
+    margin: 4rem auto 6rem auto;
+  }
+
+  .newsletterDiv h3 {
+    font-family: raleway;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #fff 46.28%, rgba(255, 255, 255, 0.2) 80.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .newsletterDiv p {
+    color: #a6aab2;
+    font-family: Inter;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-align: left;
+  }
+
+  .newsButton {
+    top: 20px;
+    right: 0px;
+    width: 6.8rem;
+    height: 3rem;
+    font-size: 0.8rem;
+
+  }
+
+  .newsInput {
+    padding-left: 1rem;
+    height: 2.8rem;
+  }
+}

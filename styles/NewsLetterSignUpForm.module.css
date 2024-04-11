@@ -1,0 +1,46 @@
+/* NewsLetterSignUpForm.module.css */
+
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.formLabel {
+  font-size: 5rem;
+  margin-bottom: 8px;
+  color: #ffffff; /* white color */
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #cccccc; /* light gray border */
+  border-radius: 5px;
+  background-color: #ffffff; /* white background */
+  color: #333333; /* dark gray text */
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4c4c; /* red background */
+  color: #ffffff; /* white text */
+  cursor: pointer;
+}
+
+/* Success message */
+.successMessage {
+  background-color: #4caf50; /* green background */
+  color: #ffffff; /* white text */
+  padding: 10px 20px;
+  border-radius: 5px;
+}

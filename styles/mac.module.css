@@ -1,0 +1,66 @@
+.header p{
+    text-align: center;
+font-family: "raleway";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 67.2px */
+text-transform: capitalize;
+background: linear-gradient(90deg, #FFF 46.28%, rgba(255, 255, 255, 0.20) 80.96%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-top: 6rem;
+    
+}
+
+.para p{
+    color: #A6AAB2;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 150% */
+}
+
+.macbook{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  width: 800px;
+  height: 800px;
+  flex-shrink: 0;
+  margin: 0 auto; 
+}
+
+.iconHeader{
+    text-align: center;
+font-family: "raleway";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 67.2px */
+text-transform: capitalize;
+background: linear-gradient(90deg, #FFF 46.28%, rgba(255, 255, 255, 0.20) 104.96%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-top: 0rem;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .icons {
+    margin-right: 20px; /* Adjust this value as needed */
+  }
+  
+  .icons:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+  }
+
