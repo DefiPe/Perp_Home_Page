@@ -4,13 +4,27 @@ import Link from "next/link";
 import HamMenu from "./hammenu";
 
 export default function Navigation() {
+  function openInNewTab(url) {
+    window.open(url, "_blank").focus();
+  }
+
   return (
     <>
       <div className={styles.navbar}>
-        <img src="defipe-logo-1.png" alt="Defi Logo" className={styles.logo}/>
+        <Link href="/">
+          {" "}
+          <img
+            src="defipe-logo-1.png"
+            alt="Defi Logo"
+            className={styles.logo}
+          />
+        </Link>
+       
         <div className={styles.navMiddle}>
           <Link href="/waitlist">Trade</Link>
-          <a>Join us</a>
+          <a onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}>
+            Join us
+          </a>
           <a style={{ cursor: "not-allowed" }}>About us</a>
         </div>
 
@@ -21,10 +35,20 @@ export default function Navigation() {
         </Link>
       </div>
 
-      <div className={styles.mobNavBar} >
-        <img src="defipe-logo-3.png" alt="Defi Logo" className={styles.logoMob}/>
+      <div className={styles.mobNavBar}>
+        <Link href="/">
+          {" "}
+          <img
+            src="defipe-logo-3.png"
+            alt="Defi Logo"
+            className={styles.logoMob}
+          />
+        </Link>
+
         <HamMenu></HamMenu>
       </div>
     </>
   );
 }
+
+//https://telegram.me/helloDefiPe

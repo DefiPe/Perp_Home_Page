@@ -4,6 +4,10 @@ import Link from "next/link";
 
 
 export default function Hero() {
+  function openInNewTab(url) {
+    window.open(url, "_blank").focus();
+  }
+
   return (
     <>
       <div className={styles.container}>
@@ -56,7 +60,7 @@ export default function Hero() {
           </button>
           {/* </Link> */}
 
-          <button className={styles.button}>
+          <button className={styles.button}  onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}>
             <img src="gift.svg" />
             Community
           </button>

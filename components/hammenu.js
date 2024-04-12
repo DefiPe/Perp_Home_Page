@@ -1,63 +1,52 @@
-import { Button } from "@/@/ui/button"
-import { Input } from "@/@/ui/input"
-import { Label } from "@/@/ui/label"
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/@/ui/sheet"
-
-//import { Input } from "@/@/ui/input"
-//import { Label } from "@/components/ui/label"
-// import {
-//   Sheet,
-//   SheetClose,
-//   SheetContent,
-//   SheetDescription,
-//   SheetFooter,
-//   SheetHeader,
-//   SheetTitle,
-//   SheetTrigger,
-// } from "@/@/ui/sheet"
-
-
-
-
+import { Button } from "@/@/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/@/ui/dropdown-menu";
+import { useState } from "react";
+import style from "@/styles/hammenu.module.css";
+import Link from "next/link";
 
 export default function HamMenu() {
-  
-
+ 
+  function openInNewTab(url) {
+    window.open(url, "_blank").focus();
+  }
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline"><img src="hamberger.svg" alt="Defi Logo" /></Button>
-      </SheetTrigger>
-     
-      <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
+    <DropdownMenu className={style.dropDownSection}>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline">
+          {" "}
+          <img src="hamberger.svg" alt="Defi Logo" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className={style.hamMenu}>
+        <div className={style.hamMenuDiv}>
+          <Link href="/waitlist" className={style.hamMenuText}>
+            <img src="trade.svg" alt="Trade icon" />
+            Trade
+          </Link>
+          <DropdownMenuSeparator />
 
-          <h1>Hullaaa</h1>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
+          <a
+            className={style.hamMenuText}
+            onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}
+          >
+            <img src="bulb.svg" alt="bulb icon" />
+            Join us
+          </a>
+          <DropdownMenuSeparator />
+          <a style={{ cursor: "not-allowed" }} className={style.hamMenuText}>
+            <img src="aboutus.svg" alt="Trade icon" />
+            About us
+          </a>
         </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
-      </SheetContent>
-    </Sheet>
-  )
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 }

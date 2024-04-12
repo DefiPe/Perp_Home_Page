@@ -44,3 +44,12 @@
   padding: 10px 20px;
   border-radius: 5px;
 }
+
+
+@media (max-width: 700px) {
+  .formLabel {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #ffffff; /* white color */
+  }
+}
