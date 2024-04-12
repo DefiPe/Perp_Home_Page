@@ -13,24 +13,30 @@ import HamMenu from "../components/hammenu";
 export default function Home() {
   return (
     <>
-      {/* <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <Head>
+        <title>DefiPe || Perpetual trading DEX for Synthetic Assets</title>
+        <meta
+          name="description"
+          content="A perpetual trading DEX where traders can trade cryptocurrencies, NFT floor prices, and real-life assets such as synthetic stocks."
+        />
+        <meta
+          name="keywords"
+          content="future trading, perpetual trading, Trade, dex, decentralized exchange, crypto, NFT, synthetic stocks, derivative exchange, NFT floor price"
+        />
 
-       
+        <meta property="og:title" content="DefiPe || Perpetual trading DEX for Synthetic Assets" />
+        <meta property="og:description" content="A perpetual trading DEX where traders can trade cryptocurrencies, NFT floor prices, and real-life assets such as synthetic stocks." />
+        <meta property="og:image" content="https://defipe.io/social-overlay.png" />
 
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat&family=Preahvihear&family=Roboto:wght@500;600;700;800&display=swap"
-          rel="stylesheet"
-        ></link>
 
-        
-      </Head> */}
+        <link rel="icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Navigation></Navigation>
       <Hero></Hero>
       <Features></Features>
       <Newsletter></Newsletter>
-      {/* <HamMenu></HamMenu> */}
       <Footer></Footer>
     </>
   );

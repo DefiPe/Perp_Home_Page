@@ -73,7 +73,7 @@ export default function Hero() {
           />
           {/* Add the overlapping image below */}
           <img
-            src="overlay.svg"
+            src="overlay.png"
             alt="Overlay Image"
             className={styles.overlayImage}
           />
