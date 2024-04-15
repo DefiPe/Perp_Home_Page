@@ -85,12 +85,12 @@
   text-align: center;
   font-family: "Raleway";
   font-style: normal;
-  line-height: 140%; /* 67.2px */
-  background: linear-gradient(91deg, #ff1cf7 2.26%, #00f0ff 100%);
+  line-height:150%; /* 67.2px */
+  background: linear-gradient(91deg, #FA7E7E 2.26%, #7D19D3 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5.1rem;
+  font-size: 3.8rem;
   font-weight: 700;
   /* line-height: 88px; */
   letter-spacing: 0.02em;
@@ -253,7 +253,7 @@
 
 @media (max-width: 700px) {
   .heroh1 h1 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -261,7 +261,7 @@
     text-align: center;
 
     /* line-height: 140%; */
-    background: linear-gradient(91deg, #ff1cf7 2.26%, #00f0ff 100%);
+    background: linear-gradient(91deg, #FA7E7E 2.26%, #7D19D3 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -295,7 +295,7 @@
     /* line-height: 24px; */
 
     font-family: Inter;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     text-align: center;
@@ -320,7 +320,7 @@
     display: flex;
     align-items: center; /* Center the items horizontally */
     justify-content: space-around; /* Center the items vertically */
-    margin: 1.5rem 0; /* Adjusted the margin between hero2 and heroTexts */
+    margin: 2rem; /* Adjusted the margin between hero2 and heroTexts */
   }
 
   .heroButtons {
@@ -336,7 +336,7 @@
     max-width: 1000px; /* Set a maximum width if needed */
     height: auto;
     position: absolute; /* Use absolute positioning */
-    top: 40%; /* Adjust the percentage to move the image further down */
+    top: 80%; /* Adjust the percentage to move the image further down */
     left: 50%; /* Center the image horizontally */
     transform: translate(-50%, -50%); /* Center the image vertically */
     z-index: 2;
