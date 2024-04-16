@@ -34,7 +34,7 @@ export default function Newsletter() {
 
       if (!res.ok) {
         const data = await res.json();
-        toast.error("☹️ Failed to subscribe user.", {
+        toast.error("☹️ Failed to subscribe user. Wrong mail id", {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -64,7 +64,7 @@ export default function Newsletter() {
       //   setIsSubscribed(false);
       // }, 3000);
     } catch (error) {
-      toast.error("😭 Error subscribing user.", {
+      toast.error("🤔 Or you are already subscribed!", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,

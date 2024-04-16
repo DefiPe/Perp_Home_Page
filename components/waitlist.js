@@ -33,7 +33,7 @@ export default function WaitList() {
 
       if (!res.ok) {
         const data = await res.json();
-        toast.error("☹️ Failed to subscribe user.", {
+        toast.error("☹️ Failed to subscribe user. Wrong mail id", {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -63,7 +63,7 @@ export default function WaitList() {
       //   setIsSubscribed(false);
       // }, 3000);
     } catch (error) {
-      toast.error("😭 Error subscribing user.", {
+      toast.error(" 🤔 Or you are already subscribed!", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -98,11 +98,11 @@ export default function WaitList() {
           Join Now
         </button>
       </form>
-      {isSubscribed && (
+      {/* {isSubscribed && (
         <div className={styles.successMessage}>
           <p>You are subscribed to defipe!</p>
         </div>
-      )}
+      )} */}
 
 <ToastContainer
           position="top-center"
