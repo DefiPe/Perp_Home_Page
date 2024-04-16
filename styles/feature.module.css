@@ -185,14 +185,17 @@
     font-weight: 700;
     line-height: 130%; /* 31.2px */
     text-transform: capitalize;
+    /* width: 80%; */
+    margin-top: 2rem;
   }
 
   .cardMob p {
     font-family: Inter;
-    font-size: 12px;
+    font-size: 0.9rem;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 18px;
     text-align: left;
-    color: #cdcdcd;
+    color: #a6aab2;
+    width: 70%;
   }
 }

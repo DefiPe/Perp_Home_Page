@@ -26,12 +26,14 @@ export default function Home() {
 
         <meta property="og:title" content="DefiPe || Perpetual trading DEX for Synthetic Assets" />
         <meta property="og:description" content="A perpetual trading DEX where traders can trade cryptocurrencies, NFT floor prices, and real-life assets such as synthetic stocks." />
-        <meta property="og:image" content="https://defipe.io/social-overlay.png" />
+        <meta property="og:image" content="https://defipe.b-cdn.net/social-overlay.png" />
 
 
         <link rel="icon" href="/favicon.ico" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        
       </Head>
       <Navigation></Navigation>
       <Hero></Hero>

@@ -27,7 +27,7 @@ export default function Hero() {
         <div className={styles.heroTexts}>
           <div className={styles.heroText}>
             <img
-              src="fast.svg"
+              src="https://defipe.b-cdn.net/fast.svg"
               alt="Fast Trading"
               className={styles.textIcon}
             />
@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
           <div className={styles.heroText}>
             <img
-              src="reliable.svg"
+              src="https://defipe.b-cdn.net/reliable.svg"
               alt="Secure & Reliable"
               className={styles.textIcon}
             />
@@ -43,7 +43,7 @@ export default function Hero() {
           </div>
           <div className={styles.heroText}>
             <img
-              src="cont.svg"
+              src="https://defipe.b-cdn.net/cont.svg"
               alt="Continuous Market Updates"
               className={styles.textIcon}
             />
@@ -54,26 +54,26 @@ export default function Hero() {
           {/* <Link href="/waitlist"> */}
           <button className={styles.button}>
             <Link href="/waitlist" style={{display:"flex", alignItems:"center", gap:"11px"}}>
-              <img src="fire.svg" alt="Button Icon 1" />
+              <img src="https://defipe.b-cdn.net/fire.svg" alt="Button Icon 1" />
               Join Waitlist
             </Link>
           </button>
           {/* </Link> */}
 
           <button className={styles.button}  onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}>
-            <img src="gift.svg" />
+            <img src="https://defipe.b-cdn.net/gift.svg" />
             Community
           </button>
         </div>
         <div className={styles.background}>
           <img
-            src="hero.svg"
+            src="https://defipe.b-cdn.net/hero.svg"
             alt="Background"
             className={styles.backgroundImage}
           />
           {/* Add the overlapping image below */}
           <img
-            src="overlay1.svg"
+            src="https://defipe.b-cdn.net/overlay1.svg"
             alt="Overlay Image"
             className={styles.overlayImage}
           />

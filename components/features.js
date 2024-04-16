@@ -17,7 +17,7 @@ export default function features() {
         <div className={styles.card}>
           
 
-          <Image src="f1.svg" alt="Image 1" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f1.svg" alt="Image 1" width={500} height={500} />
 
           <h4>Self-custody with the gasless transaction</h4>
           <p>
@@ -26,7 +26,7 @@ export default function features() {
           </p>
         </div>
         <div className={styles.card}>
-          <Image src="f2.svg" alt="Image 2" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f2.svg" alt="Image 2" width={500} height={500} />
           <h4>Many markets with Low Trading Fee</h4>
           <p>
             Trade on crypto, Nfts, or any synthetic stocks as per your wish.
@@ -34,7 +34,7 @@ export default function features() {
           </p>
         </div>
         <div className={styles.card}>
-          <Image src="f3.svg" alt="Image 3" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f3.svg" alt="Image 3" width={500} height={500} />
           <h4>High-speed trading with deep liquidity</h4>
           <p>
             Only you have full control over your funds. Trade without the worry
@@ -42,7 +42,7 @@ export default function features() {
           </p>
         </div>
         <div className={styles.card}>
-          <Image src="f4.svg" alt="Image 4" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f4.svg" alt="Image 4" width={500} height={500} />
           <h4>Fully decentralized and Open source</h4>
           <p>Secured by Zero Knowledge Proofs and Validium</p>
         </div>
@@ -50,7 +50,7 @@ export default function features() {
 
       <div className={styles.cardContainerMob}>
         <div className={styles.cardMob}>
-          <Image src="f1.svg" alt="Image 1" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f1.svg" alt="Image 1" width={500} height={500} />
           <h4>Self-custody with the gasless transaction</h4>
           <p>
             Only you have full control over your funds. Trade without the worry
@@ -58,7 +58,7 @@ export default function features() {
           </p>
         </div>
         <div className={styles.cardMob}>
-          <Image src="f2.svg" alt="Image 2" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f2.svg" alt="Image 2" width={500} height={500} />
           <h4>Many markets with Low Trading Fee</h4>
           <p>
             Trade on crypto, Nfts, or any synthetic stocks as per your wish.
@@ -66,7 +66,7 @@ export default function features() {
           </p>
         </div>
         <div className={styles.cardMob}>
-          <Image src="f3.svg" alt="Image 3" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f3.svg" alt="Image 3" width={500} height={500} />
           <h4>High-speed trading with deep liquidity</h4>
           <p>
             Only you have full control over your funds. Trade without the worry
@@ -74,7 +74,7 @@ export default function features() {
           </p>
         </div>
         <div className={styles.cardMob}>
-          <Image src="f4.svg" alt="Image 4" width={500} height={500} />
+          <Image src="https://defipe.b-cdn.net/f4.svg" alt="Image 4" width={500} height={500} />
           <h4>Fully decentralized and Open source</h4>
           <p>Secured by Zero Knowledge Proofs and Validium</p>
         </div>

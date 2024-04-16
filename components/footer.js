@@ -13,33 +13,33 @@ const Footer = () => {
       >
         <div className={styles.footer}>
           <div className={styles.footerLogoBox}>
-            <img src="defi.svg" alt="Defi Logo" />
+            <img src="defipe-logo-1.png" alt="Defi Logo" />
             <p>
               Trade whatever you like,
               <br /> whatever you want...
             </p>
             <div className={styles.socialIcons}>
               <img
-                src="LinkedIn.svg"
+                src="https://defipe.b-cdn.net/LinkedIn.svg"
                 alt="LinkedIn icon"
                 onClick={() =>
                   openInNewTab("https://www.linkedin.com/company/defipe-io/")
                 }
               />
               <img
-                src="Instagram.svg"
+                src="https://defipe.b-cdn.net/Instagram.svg"
                 alt="Instagram icon"
                 onClick={() =>
                   openInNewTab("https://www.instagram.com/defipeio/")
                 }
               />
               <img
-                src="Twitter.svg"
+                src="https://defipe.b-cdn.net/Twitter.svg"
                 alt="Twitter icon"
                 onClick={() => openInNewTab("https://twitter.com/defipeio")}
               />
               <img
-                src="youtube.svg"
+                src="https://defipe.b-cdn.net/youtube.svg"
                 alt="youtube icon"
                 onClick={() => openInNewTab("https://www.youtube.com/@DefiPe")}
               />
