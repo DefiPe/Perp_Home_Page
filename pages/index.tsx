@@ -6,6 +6,7 @@ import Features from "../components/features";
 import Newsletter from "../components/newsletter";
 import Footer from "../components/footer";
 import HamMenu from "../components/hammenu";
+import FaqFeature from "../components/faqfeature";
 
 // import { Button } from "@/@/ui/button";
 // //import { Button } from "@/components/ui/button";
@@ -24,20 +25,27 @@ export default function Home() {
           content="future trading, perpetual trading, Trade, dex, decentralized exchange, crypto, NFT, synthetic stocks, derivative exchange, NFT floor price"
         />
 
-        <meta property="og:title" content="DefiPe || Perpetual trading DEX for Synthetic Assets" />
-        <meta property="og:description" content="A perpetual trading DEX where traders can trade cryptocurrencies, NFT floor prices, and real-life assets such as synthetic stocks." />
-        <meta property="og:image" content="https://defipe.b-cdn.net/social-overlay.png" />
-
+        <meta
+          property="og:title"
+          content="DefiPe || Perpetual trading DEX for Synthetic Assets"
+        />
+        <meta
+          property="og:description"
+          content="A perpetual trading DEX where traders can trade cryptocurrencies, NFT floor prices, and real-life assets such as synthetic stocks."
+        />
+        <meta
+          property="og:image"
+          content="https://defipe.b-cdn.net/social-overlay.png"
+        />
 
         <link rel="icon" href="/favicon.ico" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        
       </Head>
       <Navigation></Navigation>
       <Hero></Hero>
       <Features></Features>
+      <FaqFeature></FaqFeature>
       <Newsletter></Newsletter>
       <Footer></Footer>
     </>

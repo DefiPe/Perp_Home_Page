@@ -10,7 +10,7 @@ export default function Navigation() {
 
   return (
     <>
-      <div className={styles.navbar}>
+      <nav className={styles.navbar}>
         <Link href="/">
           {" "}
           <img
@@ -33,9 +33,9 @@ export default function Navigation() {
           {" "}
           <button className={styles.connectButton}>Join Waitlist</button>
         </Link>
-      </div>
+      </nav>
 
-      <div className={styles.mobNavBar}>
+      <nav className={styles.mobNavBar}>
         <Link href="/">
           {" "}
           <img
@@ -49,9 +49,8 @@ export default function Navigation() {
 
 
      
-      </div>
+      </nav>
     </>
   );
 }
 
-//https://telegram.me/helloDefiPe
