@@ -44,14 +44,14 @@ export function AnimatedDiv() {
       >
         <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
           <div className="flex flex-row items-center justify-between">
-            <Circle ref={div1Ref}>
+            <Circle ref={div1Ref} className="h-16 w-16">
               <img
                 src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
                 alt="Bitcoin Logo"
                 className={styles.logo}
               />
             </Circle>
-            <Circle ref={div5Ref}>
+            <Circle ref={div5Ref} className="h-16 w-16 ">
               <img
                 src="https://cryptologos.cc/logos/ethereum-eth-logo.png"
                 alt="Ethereum Logo"
@@ -60,21 +60,20 @@ export function AnimatedDiv() {
             </Circle>
           </div>
           <div className="flex flex-row items-center justify-between bg-black">
-            <Circle ref={div2Ref}>
+            <Circle ref={div2Ref} className="h-16 w-16">
               <img
                 src="https://cryptologos.cc/logos/cardano-ada-logo.png"
                 alt="Cardano Logo"
                 className={styles.logo}
               />
             </Circle>
-            <Circle ref={div4Ref} className="h-16 w-16">
+            <Circle ref={div4Ref} className="h-20 w-20">
               <img
-                src="defipe-logo-1.png"
+                src="defipe-logo-3.png"
                 alt="Defi Logo"
-                className={styles.logo}
               />
             </Circle>
-            <Circle ref={div6Ref}>
+            <Circle ref={div6Ref} className="h-16 w-16">
               <img
                 src="https://cryptologos.cc/logos/binance-coin-bnb-logo.svg?v=002"
                 alt="Polkadot Logo"
@@ -83,14 +82,14 @@ export function AnimatedDiv() {
             </Circle>
           </div>
           <div className="flex flex-row items-center justify-between">
-            <Circle ref={div3Ref}>
+            <Circle ref={div3Ref} className="h-16 w-16">
               <img
                 src="https://cryptologos.cc/logos/solana-sol-logo.png"
                 alt="Solana Logo"
                 className={styles.logo}
               />
             </Circle>
-            <Circle ref={div7Ref}>
+            <Circle ref={div7Ref} className="h-16 w-16">
               <img
                 src="https://cryptologos.cc/logos/tether-usdt-logo.svg?v=002"
                 alt="Ripple Logo"
