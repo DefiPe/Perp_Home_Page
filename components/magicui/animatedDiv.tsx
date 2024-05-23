@@ -9,7 +9,7 @@ import styles from "@/styles/animated.module.css";
 const Circle = forwardRef<
   HTMLDivElement,
   { className?: string; children?: React.ReactNode }
->(({ className, children }, ref) => {
+>(function Circle({ className, children }, ref) {
   return (
     <div
       ref={ref}
