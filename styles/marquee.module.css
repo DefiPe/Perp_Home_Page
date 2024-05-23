@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  padding: 20px;
+}
+
+.header::before,
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 1;
+}
+
+.header::before {
+  left: 0;
+  background: linear-gradient(to right, black, transparent);
+}
+
+.header::after {
+  right: 0;
+  background: linear-gradient(to left, black, transparent);
+}

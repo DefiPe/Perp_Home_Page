@@ -7,6 +7,9 @@ import Newsletter from "../components/newsletter";
 import Footer from "../components/footer";
 import HamMenu from "../components/hammenu";
 import FaqFeature from "../components/faqfeature";
+import { GlobeDemo } from "@/components/magicui/globeDiv";
+import MarqueeDemo from "@/components/magicui/marqueeDiv";
+import { AnimatedDiv } from "@/components/magicui/animatedDiv";
 
 // import { Button } from "@/@/ui/button";
 // //import { Button } from "@/components/ui/button";
@@ -45,7 +48,11 @@ export default function Home() {
       <Navigation></Navigation>
       <Hero></Hero>
       <Features></Features>
+      <GlobeDemo></GlobeDemo>
+     
       <FaqFeature></FaqFeature>
+      <MarqueeDemo></MarqueeDemo>
+      <AnimatedDiv></AnimatedDiv>
       <Newsletter></Newsletter>
       <Footer></Footer>
     </>

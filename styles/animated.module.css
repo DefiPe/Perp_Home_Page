@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .bg-darkgrey {
+    background-color: #A9A9A9; /* Adjust the color to your preference */
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .header {
+    max-width: 64rem;
+    margin: 2rem auto;
+  }
+  
+  .header h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    text-transform: capitalize;
+    background: linear-gradient(
+      90deg,
+      #fff 46.28%,
+      rgba(255, 255, 255, 0.2) 80.96%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    margin-bottom: 2rem;
+  }
+  
