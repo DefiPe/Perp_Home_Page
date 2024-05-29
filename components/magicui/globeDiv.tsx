@@ -3,13 +3,13 @@ import Globe from "@/components/magicui/globe";
 export function GlobeDemo() {
   return (
     <div className="h-[100%]">
-    <div className="relative flex h-full w-full max-w-[100%] items-center justify-center overflow-hidden rounded-lg  bg-background px-40 pb-40 pt-8 md:pb-60 md:shadow-xl" style={{backgroundColor:"#000000",margin:"0rem 0px 2rem px"}}>
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        Decentralised World
-      </span>
-      <Globe className="top-28 flex " />
-      {/* <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" /> */}
-    </div>
+      <div className="relative flex h-full w-full max-w-[100%] items-center justify-center overflow-hidden rounded-lg bg-background px-40 pb-40 pt-8 md:pb-60 md:shadow-xl" style={{backgroundColor:"#000000",margin:"0rem 0px 2rem px"}}>
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl sm:text-6xl md:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+          Decentralised World
+        </span>
+        <Globe className="top-28 flex " />
+        {/* <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" /> */}
+      </div>
     </div>
   );
 }
