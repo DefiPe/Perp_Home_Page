@@ -21,17 +21,17 @@ export default function Navigation() {
         </Link>
        
         <div className={styles.navMiddle}>
-          <Link href="/waitlist">Trade</Link>
-          <a onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}>
-            Join us
-          </a>
+          <Link href="https://test.defipe.io/">Trade</Link>
+          <Link href="https://blog.defipe.io/">
+           Blogs
+          </Link>
           <a style={{ cursor: "not-allowed" }}>About us</a>
         </div>
 
         {/* <button className={styles.connectButton}>Join Waitlist</button> */}
-        <Link href="/waitlist">
+        <Link href="https://test.defipe.io/">
           {" "}
-          <button className={styles.connectButton}>Join Waitlist</button>
+          <button className={styles.connectButton}>Launch app</button>
         </Link>
       </nav>
 

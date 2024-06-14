@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/hero.module.css";
 import Link from "next/link";
-
+import { Textdiv } from "./magicui/textdiv";
 
 export default function Hero() {
   function openInNewTab(url) {
@@ -15,6 +15,7 @@ export default function Hero() {
           <img src="magic.svg" alt="Icon" className={styles.icon} />
           <p>Perpetual Trading is on its way</p>
         </div> */}
+       
         <div className={styles.heroh1}>
           <h1>
             Perpetual trading DEX for <br />
@@ -51,16 +52,13 @@ export default function Hero() {
           </div>
         </div>
         <div className={styles.heroButtons}>
-          {/* <Link href="/waitlist"> */}
           <button className={styles.button}>
-            <Link href="/waitlist" style={{display:"flex", alignItems:"center", gap:"11px"}}>
+            <Link href="https://test.defipe.io/" style={{ display: "flex", alignItems: "center", gap: "11px" }}>
               <img src="https://defipe.b-cdn.net/fire.svg" alt="Button Icon 1" />
-              Join Waitlist
+            Trade now
             </Link>
           </button>
-          {/* </Link> */}
-
-          <button className={styles.button}  onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}>
+          <button className={styles.button} onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}>
             <img src="https://defipe.b-cdn.net/gift.svg" />
             Community
           </button>
@@ -71,13 +69,11 @@ export default function Hero() {
             alt="Background"
             className={styles.backgroundImage}
           />
-          {/* Add the overlapping image below */}
           <img
             src="https://defipe.b-cdn.net/overlay1.svg"
             alt="Overlay Image"
             className={styles.overlayImage}
           />
-          {/* <img src="features.svg" alt="feature" className={styles.feature} /> */}
         </div>
       </div>
     </>

@@ -32,6 +32,11 @@
   margin: 0.5rem 0;
   text-align: center;
 } */
+/* hero.module.css */
+.textDivContainer {
+  margin-top: -90px; /* Adjust this value as needed */
+  margin-bottom: -90px; /* Adjust this value as needed */
+}
 
 .heroh2 p {
   color: #a6aab2;

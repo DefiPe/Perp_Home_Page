@@ -10,7 +10,7 @@ import FaqFeature from "../components/faqfeature";
 import { GlobeDemo } from "@/components/magicui/globeDiv";
 import MarqueeDemo from "@/components/magicui/marqueeDiv";
 import { AnimatedDiv } from "@/components/magicui/animatedDiv";
-import { TextDiv } from "@/components/magicui/textdiv";
+
 
 // import { Button } from "@/@/ui/button";
 // //import { Button } from "@/components/ui/button";
