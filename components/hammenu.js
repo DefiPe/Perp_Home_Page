@@ -52,7 +52,7 @@ export default function HamMenu() {
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions" className={style.hamMenu}>
         <DropdownItem key="new">
-          <Link href="/waitlist" className={style.hamMenuText}>
+          <Link href="https://test.defipe.io/" className={style.hamMenuText}>
             <img src="https://defipe.b-cdn.net/trade.svg" alt="Trade icon" />
             Trade
           </Link>
