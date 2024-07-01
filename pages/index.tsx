@@ -10,6 +10,8 @@ import FaqFeature from "../components/faqfeature";
 import { GlobeDemo } from "@/components/magicui/globeDiv";
 import MarqueeDemo from "@/components/magicui/marqueeDiv";
 import { AnimatedDiv } from "@/components/magicui/animatedDiv";
+import DemoVideo from "../components/demoVideo";
+import { NftView } from "@/components/magicui/orbiting-div";
 
 
 // import { Button } from "@/@/ui/button";
@@ -48,12 +50,14 @@ export default function Home() {
       </Head>
       <Navigation></Navigation>
       <Hero></Hero>
+      
       <Features></Features>
+      <DemoVideo></DemoVideo>
       <GlobeDemo></GlobeDemo>
-     
-      <FaqFeature></FaqFeature>
+      {/* <NftView></NftView> */}
       <MarqueeDemo></MarqueeDemo>
       <AnimatedDiv></AnimatedDiv>
+      <FaqFeature></FaqFeature> 
       <Newsletter></Newsletter>
       <Footer></Footer>
     </>
