@@ -19,14 +19,6 @@ interface CryptoData {
   price_change_percentage_24h: number;
 }
 
-interface NftData {
-  id: string;
-  thumb: string;
-  name: string;
-  floor_price: number;
-  floor_price_24h_percentage_change: number;
-}
-
 const CryptoCard = ({ image, name, price, change }: CryptoCardProps) => {
   return (
     <figure
@@ -52,92 +44,58 @@ const CryptoCard = ({ image, name, price, change }: CryptoCardProps) => {
 
 const MarqueeDemo = () => {
   const [cryptoData, setCryptoData] = useState<CryptoData[]>([]);
-  const [nftData, setNftData] = useState<NftData[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchCryptoData = async () => {
+    const fetchData = async () => {
       try {
-        const cryptoResponse = await axios.get<CryptoData[]>(
-          "https://api.coingecko.com/api/v3/coins/markets",
-          {
-            params: {
-              vs_currency: "usd",
-              ids: "bitcoin,ethereum,ripple,cardano,solana,aave,arbitrum,sushi,matic,tether,dogecoin",
-            },
-          }
-        );
-        setCryptoData(cryptoResponse.data);
-
-        const nftResponse = await axios.get<NftData[]>(
-          "https://api.coingecko.com/api/v3/nfts",
-          {
-            params: {
-              ids: "azuki,bored-ape-yacht-club,cryptopunks,mutant-ape-yacht-club,clonex,cyberkongz",
-            },
-          }
-        );
-        setNftData(nftResponse.data);
+        const response = await axios.get("/api/market");
+        setCryptoData(response.data.cryptoData);
+        console.log(response.data.cryptoData)
+        setError(null);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setError("Failed to fetch data. Please try again later.");
       }
     };
 
-    fetchCryptoData();
+    fetchData();
   }, []);
 
-  const combinedData = [...nftData, ...cryptoData];
-  const firstRow = combinedData.slice(0, Math.ceil(combinedData.length / 2));
-  const secondRow = combinedData.slice(Math.ceil(combinedData.length / 2));
-
-  const getImage = (item: CryptoData | NftData): string => {
-    if ("image" in item) {
-      return item.image;
-    } else {
-      return item.thumb;
-    }
-  };
-
-  const getPrice = (item: CryptoData | NftData): number => {
-    if ("current_price" in item) {
-      return item.current_price;
-    } else {
-      return item.floor_price;
-    }
-  };
-
-  const getChange = (item: CryptoData | NftData): number => {
-    if ("price_change_percentage_24h" in item) {
-      return item.price_change_percentage_24h;
-    } else {
-      return item.floor_price_24h_percentage_change;
-    }
-  };
+  const firstRow = cryptoData.slice(0, Math.ceil(cryptoData.length / 2));
+  const secondRow = cryptoData.slice(Math.ceil(cryptoData.length / 2));
 
   return (
     <div className={styles.header}>
       <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20 md:shadow-xl bg-black">
-        <Marquee pauseOnHover className="[--duration:20s]">
-          {firstRow.map((item) => (
-            <CryptoCard
-              key={item.id}
-              image={getImage(item)}
-              name={item.name}
-              price={getPrice(item)}
-              change={getChange(item)}
-            />
-          ))}
-        </Marquee>
-        <Marquee pauseOnHover direction="right" className="[--duration:30s]">
-          {secondRow.map((item) => (
-            <CryptoCard
-              key={item.id}
-              image={getImage(item)}
-              name={item.name}
-              price={getPrice(item)}
-              change={getChange(item)}
-            />
-          ))}
-        </Marquee>
+        {error ? (
+          <div className="text-red-500">{error}</div>
+        ) : (
+          <>
+            <Marquee pauseOnHover className="[--duration:20s]">
+              {firstRow.map((item) => (
+                <CryptoCard
+                  key={item.id}
+                  image={item.image}
+                  name={item.name}
+                  price={item.current_price}
+                  change={item.price_change_percentage_24h}
+                />
+              ))}
+            </Marquee>
+            <Marquee pauseOnHover direction="right" className="[--duration:30s]">
+              {secondRow.map((item) => (
+                <CryptoCard
+                  key={item.id}
+                  image={item.image}
+                  name={item.name}
+                  price={item.current_price}
+                  change={item.price_change_percentage_24h}
+                />
+              ))}
+            </Marquee>
+          </>
+        )}
       </div>
     </div>
   );
