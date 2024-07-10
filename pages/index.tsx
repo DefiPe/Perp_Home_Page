@@ -12,6 +12,7 @@ import MarqueeDemo from "@/components/magicui/marqueeDiv";
 import { AnimatedDiv } from "@/components/magicui/animatedDiv";
 import DemoVideo from "../components/demoVideo";
 import { NftView } from "@/components/magicui/orbiting-div";
+import Defipe from "@/components/defipe";
 
 
 // import { Button } from "@/@/ui/button";
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <>
       <Head>
+      <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300&display=swap" rel="stylesheet"/>
         <title>DefiPe || Perpetual trading DEX for Synthetic Assets</title>
         <meta
           name="description"
@@ -50,6 +52,7 @@ export default function Home() {
       </Head>
       <Navigation></Navigation>
       <Hero></Hero>
+      <Defipe></Defipe>
       
       <Features></Features>
       <DemoVideo></DemoVideo>

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/hero.module.css";
 import Link from "next/link";
-import { Textdiv } from "./magicui/textdiv";
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   function openInNewTab(url) {
     window.open(url, "_blank").focus();
   }
@@ -15,15 +21,27 @@ export default function Hero() {
           <img src="magic.svg" alt="Icon" className={styles.icon} />
           <p>Perpetual Trading is on its way</p>
         </div> */}
-       
         <div className={styles.heroh1}>
           <h1>
-            Perpetual trading DEX for <br />
-            <span>Synthetic Assets</span>
+            Maximize your NFTs potential <br />
+            <span>without selling it!</span>
           </h1>
         </div>
         <div className={styles.heroh2}>
-          <p>The world's easiest-to-use decentralized trading platform</p>
+          <p>
+            Your perpetual futures dex for NFTs and Cryptos
+            {/* {isClient && (
+              <span>
+                <Typewriter
+                  options={{
+                    strings: ["NFTs", "Cryptos", "Real-World Assets"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
+            )} */}
+          </p>
         </div>
         <div className={styles.heroTexts}>
           <div className={styles.heroText}>
@@ -53,12 +71,21 @@ export default function Hero() {
         </div>
         <div className={styles.heroButtons}>
           <button className={styles.button}>
-            <Link href="https://test.defipe.io/" style={{ display: "flex", alignItems: "center", gap: "11px" }}>
-              <img src="https://defipe.b-cdn.net/fire.svg" alt="Button Icon 1" />
-            Trade now
+            <Link
+              href="https://test.defipe.io/"
+              style={{ display: "flex", alignItems: "center", gap: "11px" }}
+            >
+              <img
+                src="https://defipe.b-cdn.net/fire.svg"
+                alt="Button Icon 1"
+              />
+              Trade now
             </Link>
           </button>
-          <button className={styles.button} onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}>
+          <button
+            className={styles.button}
+            onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}
+          >
             <img src="https://defipe.b-cdn.net/gift.svg" />
             Community
           </button>
