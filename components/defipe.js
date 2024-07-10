@@ -19,7 +19,7 @@ export default function Defipe() {
           <h2>What is Defipe?</h2>
           <p >
           <span>Think your CryptoPunks or any other blue-chip NFT project is skyrocketing in value for a short time? You want to cash in but can’t bear to sell your rare gem below market value? What do you do?</span><br />
-          <span>But hold onto your pixelated hats! With Defipe, you can speculate on the floor prices of top NFT projects like Bored Ape Yacht Club, CryptoPunks, and more without saying goodbye to your beloved JPEGs.</span><br />
+          <span>Hold onto your pixelated hats! With Defipe, you can speculate on the floor prices of top NFT projects like Bored Ape Yacht Club, CryptoPunks, and more without saying goodbye to your beloved JPEGs.</span><br />
           <span style={{color:"white"}}>So, traders, get set, trade, and watch those floor prices shoot for the stars!🌟</span><br/>
           </p>
         </div>

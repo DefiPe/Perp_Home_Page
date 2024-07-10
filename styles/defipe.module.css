@@ -81,6 +81,7 @@
   }
 
   .header p {
+    margin-top: 5rem;
     width: 90%;
     color: #a6aab2;
     font-family: Inter;
@@ -89,6 +90,10 @@
     line-height: 1.4rem;
     text-align: left;
     margin: 0 auto;
+  }
+
+  .header p span{
+    margin-top: 0.5rem;
   }
 
   .imgContainer {
