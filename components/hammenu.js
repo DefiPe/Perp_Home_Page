@@ -7,6 +7,7 @@ import {
 } from "@nextui-org/react";
 import style from "@/styles/hammenu.module.css";
 import Link from "next/link";
+import Text from "@carefully-coded/react-text-gradient"
 
 export default function HamMenu() {
   function openInNewTab(url) {
@@ -67,10 +68,14 @@ export default function HamMenu() {
           </a>
         </DropdownItem>
         <DropdownItem key="edit">
-          <a style={{ cursor: "not-allowed" }} className={style.hamMenuText}>
-            <img src="https://defipe.b-cdn.net/aboutus.svg" alt="Trade icon" />
-            About us
-          </a>
+        <Text 
+  gradient={{ from: '#a1ff0a', to: '#ff6000' }} 
+  animateTo={{ to: '#bc00dd', from: '#6a00f4' }} 
+  animationDuration={4000}
+  style={{fontWeight:"bold"}}
+>
+<a href="/airdrop">Win $50k</a>
+</Text>
         </DropdownItem>
         {/* <DropdownItem key="delete" className="text-danger" color="danger">
           Delete file

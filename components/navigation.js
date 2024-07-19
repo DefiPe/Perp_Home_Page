@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/navbar.module.css";
 import Link from "next/link";
 import HamMenu from "./hammenu";
-
+import Text from "@carefully-coded/react-text-gradient"
 export default function Navigation() {
   function openInNewTab(url) {
     window.open(url, "_blank").focus();
@@ -25,9 +25,15 @@ export default function Navigation() {
           <Link href="https://blog.defipe.io/">
            Blogs
           </Link>
-          <a style={{ cursor: "not-allowed" }}>About us</a>
+          <Text 
+  gradient={{ from: '#a1ff0a', to: '#ff6000' }} 
+  animateTo={{ to: '#bc00dd', from: '#6a00f4' }} 
+  animationDuration={4000}
+  className={styles.navText}
+>
+<a href="/airdrop">Win $50k</a>
+</Text>
         </div>
-
         {/* <button className={styles.connectButton}>Join Waitlist</button> */}
         <Link href="https://test.defipe.io/">
           {" "}

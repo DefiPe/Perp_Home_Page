@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@carefully-coded/react-text-gradient": "^1.0.6",
     "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@nextui-org/accordion": "^2.0.30",
     "@nextui-org/react": "^2.2.10",

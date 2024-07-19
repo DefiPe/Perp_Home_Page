@@ -7,7 +7,11 @@
     margin: 0px auto;
     
 }
-
+.navText{
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: inter;
+}
 .logo {
     height: 2rem;
     width: auto;
