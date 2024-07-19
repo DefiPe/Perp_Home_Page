@@ -74,7 +74,7 @@ export default function HamMenu() {
   animationDuration={4000}
   style={{fontWeight:"bold"}}
 >
-<a href="/airdrop">Win $50k</a>
+<Link href="/airdrop">Win $50k</Link>
 </Text>
         </DropdownItem>
         {/* <DropdownItem key="delete" className="text-danger" color="danger">
