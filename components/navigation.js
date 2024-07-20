@@ -31,7 +31,7 @@ export default function Navigation() {
   animationDuration={4000}
   className={styles.navText}
 >
-<Link href="/airdrop">Win $50k</Link>
+<Link href="/airdrop">Win $10k</Link>
 </Text>
         </div>
         {/* <button className={styles.connectButton}>Join Waitlist</button> */}
