@@ -3,6 +3,7 @@ import Newsletter from "../components/newsletter";
 import Footer from "../components/footer";
 import SparklesText from "@/components/magicui/sparkels-text";
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTelegram, faTwitter, faLinkedin, faDiscord, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
@@ -32,11 +33,16 @@ export default function Airdrop() {
                     </div>
                 </div>
                 <div className={styles.rightContent}>
-                    <img src="https://media1.giphy.com/media/VOgpnDOAddaN0zr9UE/200w.gif?cid=6c09b952j199ek9r6tgbosnusg5lqsze070o5cvo93e3sw7m&ep=v1_gifs_search&rid=200w.gif&ct=g" height={300} width={300}></img>
+                    <Image 
+                        src="https://media1.giphy.com/media/VOgpnDOAddaN0zr9UE/200w.gif?cid=6c09b952j199ek9r6tgbosnusg5lqsze070o5cvo93e3sw7m&ep=v1_gifs_search&rid=200w.gif&ct=g" 
+                        alt="Airdrop GIF"
+                        height={300} 
+                        width={300} 
+                    />
                 </div>
             </div>
             <Newsletter></Newsletter>
-        {/* <Footer></Footer> */}
+            {/* <Footer></Footer> */}
         </div>    
         </>
     )
