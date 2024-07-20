@@ -59,11 +59,33 @@
     border-color: antiquewhite;
 }
 
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icon {
+    color: white;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #00aced; /* Change this hover color as per your requirement */
+}
+
+
 @media(max-width: 700px) {
     .content {
         flex-direction: column;
     }
     .rightContent{
         order: -1;
+    }
+    .leftContent p{
+        font-size: 1.5rem;
+    }
+    .leftContent li{
+        font-size: 1.2rem;
     }
 }
