@@ -7,7 +7,7 @@ import Newsletter from "../components/newsletter";
 import Footer from "../components/footer";
 import HamMenu from "../components/hammenu";
 import FaqFeature from "../components/faqfeature";
-import { GlobeDemo } from "@/components/magicui/globeDiv";
+//import { GlobeDemo } from "@/components/magicui/globeDiv";
 import MarqueeDemo from "@/components/magicui/marqueeDiv";
 import { AnimatedDiv } from "@/components/magicui/animatedDiv";
 import DemoVideo from "../components/demoVideo";
@@ -56,7 +56,7 @@ export default function Home() {
       
       <Features></Features>
       <DemoVideo></DemoVideo>
-      <GlobeDemo></GlobeDemo>
+      {/* <GlobeDemo></GlobeDemo> */}
       {/* <NftView></NftView> */}
       <MarqueeDemo></MarqueeDemo>
       <AnimatedDiv></AnimatedDiv>

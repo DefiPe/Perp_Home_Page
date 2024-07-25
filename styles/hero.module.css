@@ -139,6 +139,7 @@
   font-size: 1rem; /* Adjusted the font size for the buttons */
   border: none; /* Remove default button border */
   cursor: pointer; /* Add pointer cursor */
+  color: white;
 }
 
 .button:first-child {

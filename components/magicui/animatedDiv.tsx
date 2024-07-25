@@ -46,7 +46,7 @@ export function AnimatedDiv() {
             <div className="flex flex-row items-center justify-between">
               <Circle ref={div1Ref} className="h-16 w-16">
                 <Image
-                  src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+                  src="https://defipe.b-cdn.net/bitcoin-btc-logo.webp"
                   alt="Bitcoin Logo"
                   className={styles.logo}
                   width={64} // Adjust width and height according to your needs
@@ -55,7 +55,7 @@ export function AnimatedDiv() {
               </Circle>
               <Circle ref={div5Ref} className="h-16 w-16">
                 <Image
-                  src="https://cryptologos.cc/logos/ethereum-eth-logo.png"
+                  src="https://defipe.b-cdn.net/ethereum-eth-logo.webp"
                   alt="Ethereum Logo"
                   className={styles.logo}
                   width={64}
@@ -66,7 +66,7 @@ export function AnimatedDiv() {
             <div className="flex flex-row items-center justify-between bg-black">
               <Circle ref={div2Ref} className="h-16 w-16">
                 <Image
-                  src="https://cryptologos.cc/logos/cardano-ada-logo.png"
+                  src="https://defipe.b-cdn.net/cardano-ada-logo.webp"
                   alt="Cardano Logo"
                   className={styles.logo}
                   width={64}
@@ -83,7 +83,7 @@ export function AnimatedDiv() {
               </Circle>
               <Circle ref={div6Ref} className="h-16 w-16">
                 <Image
-                  src="https://cryptologos.cc/logos/binance-coin-bnb-logo.svg?v=002"
+                  src="https://defipe.b-cdn.net/binance-coin-bnb-logo.svg"
                   alt="Binance Coin Logo"
                   className={styles.logo}
                   width={64}
@@ -94,7 +94,7 @@ export function AnimatedDiv() {
             <div className="flex flex-row items-center justify-between">
               <Circle ref={div3Ref} className="h-16 w-16">
                 <Image
-                  src="https://cryptologos.cc/logos/solana-sol-logo.png"
+                  src="https://defipe.b-cdn.net/solana-sol-logo.png"
                   alt="Solana Logo"
                   className={styles.logo}
                   width={64}
@@ -103,8 +103,8 @@ export function AnimatedDiv() {
               </Circle>
               <Circle ref={div7Ref} className="h-16 w-16">
                 <Image
-                  src="https://cryptologos.cc/logos/tether-usdt-logo.svg?v=002"
-                  alt="Tether Logo"
+                  src="https://defipe.b-cdn.net/optimism-ethereum-op-logo.png"
+                  alt="Optimism Logo"
                   className={styles.logo}
                   width={64}
                   height={64}

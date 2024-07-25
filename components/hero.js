@@ -2,18 +2,9 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/hero.module.css";
 import Link from "next/link";
-import Typewriter from "typewriter-effect";
+
 
 export default function Hero() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  function openInNewTab(url) {
-    window.open(url, "_blank").focus();
-  }
 
   return (
     <>
@@ -88,21 +79,25 @@ export default function Hero() {
                 width={20}
                 height={20}
               />
-              Trade now
+              Trade Now
             </Link>
           </button>
-          <button
+          {/* <button
             className={styles.button}
             onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}
-          >
+          > */}
+            <Link 
+            className={styles.button}
+            href="/airdrop">
             <Image
               src="https://defipe.b-cdn.net/gift.svg"
               alt="Community"
               width={20}
               height={20}
             />
-            Community
-          </button>
+            Air Drop
+            </Link>
+          {/* </button> */}
         </div>
         <div className={styles.background}>
           <Image
