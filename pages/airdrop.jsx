@@ -1,19 +1,11 @@
 import styles from "@/styles/airdrop.module.css";
 import Newsletter from "../components/newsletter";
-import Footer from "../components/footer";
 import SparklesText from "@/components/magicui/sparkels-text";
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTelegram,
-  faTwitter,
-  faLinkedin,
-  faDiscord,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 
 export default function Airdrop() {
+
   return (
     <>
       <div className={styles.background}>
@@ -35,7 +27,9 @@ export default function Airdrop() {
                 1. Follow us on ProductHunt
                 <br /> Link -
                 <Link
-                  href="https://www.producthunt.com/posts/defipe-2"
+                  href="http://www.producthunt.com/products/defipe"
+                  rel="noopener noreferrer"
+                  target="_blank"
                   style={{ color: "#4361ee", fontWeight: "bold" }}
                 >
                   {" "}
@@ -58,65 +52,49 @@ export default function Airdrop() {
                   height={20}
                   className={styles.icon}
                 />
-                {/* <FontAwesomeIcon
-                  icon={faTelegram}
-                  size="lg"
-                  className={styles.icon}
-                /> */}
+
               </Link>
               <Link
                 href="https://x.com/DefiPeio"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                 <Image
+                <Image
                   src="https://defipe.b-cdn.net/image-2.png"
                   alt="Community"
                   width={20}
                   height={20}
                   className={styles.icon}
                 />
-                {/* <FontAwesomeIcon
-                  icon={faTwitter}
-                  size="lg"
-                  className={styles.icon}
-                /> */}
+
               </Link>
               <Link
                 href="https://www.linkedin.com/company/defipe-io/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                 <Image
+                <Image
                   src="https://defipe.b-cdn.net/image-3.png"
                   alt="Community"
                   width={20}
                   height={20}
                   className={styles.icon}
                 />
-                {/* <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="lg"
-                  className={styles.icon}
-                /> */}
+
               </Link>
               <Link
                 href="https://www.instagram.com/defipeio/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                 <Image
+                <Image
                   src="https://defipe.b-cdn.net/image-1.png"
                   alt="Community"
                   width={20}
                   height={20}
                   className={styles.icon}
                 />
-                {/* <FontAwesomeIcon
-                  icon={faInstagram}
-                  size="lg"
-                  className={styles.icon}
-                /> */}
+
               </Link>
             </div>
           </div>

@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/airdrop.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/airdrop.jsx"],
   "exclude": ["node_modules"]
 }
