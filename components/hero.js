@@ -3,9 +3,7 @@ import Image from "next/image";
 import styles from "../styles/hero.module.css";
 import Link from "next/link";
 
-
 export default function Hero() {
-
   return (
     <>
       <div className={styles.container}>
@@ -15,8 +13,11 @@ export default function Hero() {
         </div> */}
         <div className={styles.heroh1}>
           <h1>
-            Maximize your NFTs potential <br />
-            <span>without selling it!</span>
+            Get profit from NFTs
+            <br /> without
+            <span> buying or selling</span>
+            {/* Maximize your NFTs potential <br />
+            <span>without selling it!</span> */}
           </h1>
         </div>
         <div className={styles.heroh2}>
@@ -86,9 +87,7 @@ export default function Hero() {
             className={styles.button}
             onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}
           > */}
-            <Link 
-            className={styles.button}
-            href="/airdrop">
+          <Link className={styles.button} href="/airdrop">
             <Image
               src="https://defipe.b-cdn.net/gift.svg"
               alt="Community"
@@ -96,7 +95,7 @@ export default function Hero() {
               height={20}
             />
             Air Drop
-            </Link>
+          </Link>
           {/* </button> */}
         </div>
         <div className={styles.background}>
