@@ -4,8 +4,12 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head >
-      <Script id="microsoft-script" type="text/javascript">
+      <Head>
+        <Script
+          id="microsoft-script"
+          type="text/javascript"
+          strategy="lazyOnload"
+        >
           {` (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -43,8 +47,6 @@ export default function Document() {
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
         </Script>
-
-        
       </body>
     </Html>
   );
