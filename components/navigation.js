@@ -12,6 +12,11 @@ export default function Navigation() {
 
   return (
     <>
+    <div className={styles.productHunt}>
+          <div className={styles.header}>
+            <h3>We are launching on product hunt on 9th August 🚀 </h3>
+          </div>
+    </div>
       <nav className={styles.navbar}>
         <Link href="/">
           <Image

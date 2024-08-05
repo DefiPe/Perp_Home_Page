@@ -92,7 +92,7 @@ export default function Airdrop() {
                 <div className={styles.taskNumber}>Task 1</div>
                 <div className={styles.taskContent}>
                   <div className={styles.taskList}>Follow our official Twitter Account</div>
-                  <Button className={styles.taskBtton}>Follow</Button>
+                  <Button className={styles.taskBtton} href="https://x.com/DefiPeio">Follow</Button>
                 </div>
               </div>
               <div className={styles.task}>
@@ -106,7 +106,7 @@ export default function Airdrop() {
                 <div className={styles.taskNumber}>Task 3</div>
                 <div className={styles.taskContent}>
                   <div className={styles.taskList}>Join our telegram channel</div>
-                  <Button className={styles.taskBtton}>Join Now</Button>
+                  <Button className={styles.taskBtton} href="https://telegram.me/helloDefiPe">Join Now</Button>
                 </div>
               </div>
             </div>
@@ -126,6 +126,14 @@ export default function Airdrop() {
                 value={twitter}
                 name="Twitter"
                 onChange={(e) => setTwitter(e.target.value)}
+              />
+              <label>Enter Your post Re-tweet url</label>
+              <input
+                type="text"
+                className={styles.inputBox}
+                value={erc20}
+                name="Wallet"
+                onChange={(e) => setErc20(e.target.value)}
               />
               <label>Enter Your Telegram Handle</label>
               <input
