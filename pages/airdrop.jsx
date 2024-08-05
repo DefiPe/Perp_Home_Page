@@ -12,27 +12,63 @@ export default function Airdrop() {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleSubmit = async () => {
+
+
     if (!isChecked) {
       alert("Please confirm that you have provided the correct links.");
       return;
     }
 
-    try {
-      const response = await axios.post("/api/submit", {
-        erc20,
-        twitter,
-        telegram
-      });
+    // try {
+    //   const response = await axios.post("/api/submit", {
+    //     erc20,
+    //     twitter,
+    //     telegram
+    //   });
 
-      if (response.data.status === "success") {
-        alert("Data submitted successfully!");
-      } else {
-        alert("Error submitting data!");
-      }
-    } catch (error) {
-      console.error("Error submitting data:", error);
-      alert("Error submitting data!");
+    //   if (response.data.status === "success") {
+    //     alert("Data submitted successfully!");
+    //   } else {
+    //     alert("Error submitting data!");
+    //   }
+    // } catch (error) {
+    //   console.error("Error submitting data:", error);
+    //   alert("Error submitting data!");
+    // }
+  };
+
+
+  const handleACSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Submitted")
+    const abc = document.querySelector("form")
+    console.log("fhhf ", abc)
+
+    const formData = new FormData(abc);
+    console.log("form ", formData)
+
+
+    if (!isChecked) {
+      alert("Please confirm that you have provided the correct links.");
+      return;
     }
+
+    // try {
+    //   const response = await axios.post("/api/submit", {
+    //     erc20,
+    //     twitter,
+    //     telegram
+    //   });
+
+    //   if (response.data.status === "success") {
+    //     alert("Data submitted successfully!");
+    //   } else {
+    //     alert("Error submitting data!");
+    //   }
+    // } catch (error) {
+    //   console.error("Error submitting data:", error);
+    //   alert("Error submitting data!");
+    // }
   };
 
   return (
@@ -48,7 +84,7 @@ export default function Airdrop() {
         </div>
         <div className={styles.content}>
           <div className={styles.leftContent}>
-            <p style={{ marginBottom: "2rem",marginTop:"2rem" }}>
+            <p style={{ marginBottom: "2rem", marginTop: "2rem" }}>
               Tasks to be <span style={{ color: "white" }}>followed</span> :
             </p>
             <div className={styles.allTasks}>
@@ -116,6 +152,14 @@ export default function Airdrop() {
             </Button>
           </div>
         </div>
+
+
+        <form name="form" onSubmit={(e) => handleACSubmit(e)}>
+          <input placeholder="Name" name="Name" type="text" />
+          <input placeholder="Email" name="Email" type="text" />
+          <input name="button" type="submit" />
+        </form>
+
         <Newsletter />
       </div>
     </>
