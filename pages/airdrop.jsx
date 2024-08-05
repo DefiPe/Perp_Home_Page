@@ -4,6 +4,7 @@ import styles from "@/styles/airdrop.module.css";
 import Newsletter from "../components/newsletter";
 import SparklesText from "@/components/magicui/sparkels-text";
 import { Button } from "@nextui-org/react";
+import { toast,ToastContainer } from "react-toastify";
 
 export default function Airdrop() {
   const handleSubmit =async (e)=>{
@@ -15,7 +16,30 @@ export default function Airdrop() {
      Telegram:e.target.Telegram.value
     })
     console.log(res);
-  }
+    if (res.status === 200) {
+      toast.success("Get ready for the results, stay tuned 🎊", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else {
+      toast.error("Something went wrong, please try again.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
+  } 
   return (
     <>
       <div className={styles.background}>
@@ -87,6 +111,19 @@ export default function Airdrop() {
               Submit
             </Button>
             </form>
+            <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          // transition:Bounce
+        />
           </div>
         </div>
         <Newsletter />
