@@ -6,35 +6,16 @@ import SparklesText from "@/components/magicui/sparkels-text";
 import { Button } from "@nextui-org/react";
 
 export default function Airdrop() {
-  const [erc20, setErc20] = useState("");
-  const [twitter, setTwitter] = useState("");
-  const [telegram, setTelegram] = useState("");
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleSubmit = async () => {
-    if (!isChecked) {
-      alert("Please confirm that you have provided the correct links.");
-      return;
-    }
-
-    try {
-      const response = await axios.post("/api/submit", {
-        erc20,
-        twitter,
-        telegram
-      });
-
-      if (response.data.status === "success") {
-        alert("Data submitted successfully!");
-      } else {
-        alert("Error submitting data!");
-      }
-    } catch (error) {
-      console.error("Error submitting data:", error);
-      alert("Error submitting data!");
-    }
-  };
-
+  const handleSubmit =async (e)=>{
+    e.preventDefault();
+    const res=await axios.post("/api/sheet",{
+      Wallet:e.target.Wallet.value,
+      Twitter:e.target.Twitter.value,
+      RetweetURL: e.target.RetweetURL.value,
+     Telegram:e.target.Telegram.value
+    })
+    console.log(res);
+  }
   return (
     <>
       <div className={styles.background}>
@@ -74,54 +55,38 @@ export default function Airdrop() {
                 </div>
               </div>
             </div>
+            <form onSubmit={handleSubmit}>
             <div className={styles.inputs}>
               <label>Enter Your ERC20 Address</label>
               <input
                 type="text"
                 className={styles.inputBox}
-                value={erc20}
                 name="Wallet"
-                onChange={(e) => setErc20(e.target.value)}
+
               />
               <label>Enter Your Twitter Handle</label>
               <input
                 type="text"
                 className={styles.inputBox}
-                value={twitter}
                 name="Twitter"
-                onChange={(e) => setTwitter(e.target.value)}
               />
               <label>Enter Your post Re-tweet url</label>
               <input
                 type="text"
                 className={styles.inputBox}
-                value={erc20}
-                name="Wallet"
-                onChange={(e) => setErc20(e.target.value)}
+                name="RetweetURL"
               />
               <label>Enter Your Telegram Handle</label>
               <input
                 type="text"
                 className={styles.inputBox}
-                value={telegram}
                 name="Telegram"
-                onChange={(e) => setTelegram(e.target.value)}
               />
             </div>
-            <div className={styles.declaration}>
-              <input
-                type="checkbox"
-                id="confirmation"
-                checked={isChecked}
-                onChange={(e) => setIsChecked(e.target.checked)}
-              />
-              <label htmlFor="confirmation" className={styles.declarationText}>
-                I confirm that I have provided the correct links and information.
-              </label>
-            </div>
-            <Button className={styles.submitButton} onClick={handleSubmit}>
+            <Button className={styles.submitButton} type="submit">
               Submit
             </Button>
+            </form>
           </div>
         </div>
         <Newsletter />
