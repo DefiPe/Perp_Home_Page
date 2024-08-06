@@ -42,7 +42,7 @@ export default function FaqFeature() {
     },
   ];
   return (
-    <div className={styles.faqSection}>
+    <div className={styles.faqSection} id="faq">
       <h2 className={styles.faqHeader}>Frequently Asked Questions</h2>
       <Accordion variant="splitted">
         {FaqContent.map((item) => (

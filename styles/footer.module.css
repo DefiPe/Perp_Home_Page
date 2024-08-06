@@ -3,9 +3,11 @@
   align-items: center;
   justify-content: center;
   height: 15rem;
-  background-color: #212131;
-  width: 100%;
-  border-top: 1px solid #eff0f6;
+  background-color: rgb(18, 18, 18);
+  width: 85%;
+  /* border-top: 1px solid #eff0f6; */
+  margin: auto;
+  border-radius: 50px 50px 0px 0px;
 }
 
 .footer {
@@ -32,7 +34,7 @@
 }
 
 .footerLogoBox img {
-  width: 8rem;
+  width: 10rem;
 }
 
 .footerLogoBox p {
@@ -45,6 +47,7 @@
   width: 10rem;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-top: 0.2rem;
 }
 
 .socialIcons img {
@@ -73,16 +76,18 @@
 .footerSection a {
   margin-bottom: 0.4rem;
   /* font-family: DM Sans; */
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   text-align: left;
   color: #6f6c90;
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
 }
 
 .bottomFooter {
   height: 3rem;
-  background-color: #212131;
+  background-color: rgb(18, 18, 18);
+  width: 85%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -90,13 +95,13 @@
   font-size: 0.9rem;
   font-weight: 400;
   text-align: center;
-  color: #6F6C90;
+  color: #6f6c90;
 }
 
 @media (max-width: 700px) {
   .footerDiv {
     height: 24rem;
-    border-top: 1px solid #eff0f6;
+    /* border-top: 1px solid #eff0f6; */
   }
   .footer {
     height: auto;
@@ -123,5 +128,6 @@
   .socialIcons {
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
   }
 }

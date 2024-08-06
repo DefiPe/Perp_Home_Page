@@ -12,7 +12,7 @@ import MarqueeDemo from "@/components/magicui/marqueeDiv";
 import { AnimatedDiv } from "@/components/magicui/animatedDiv";
 import DemoVideo from "../components/demoVideo";
 import { NftView } from "@/components/magicui/orbiting-div";
-import Defipe from "@/components/defipe";
+//import Defipe from "@/components/defipe";
 
 // import { Button } from "@/@/ui/button";
 // //import { Button } from "@/components/ui/button";
@@ -60,7 +60,7 @@ export default function Home() {
       </Head>
       <Navigation></Navigation>
       <Hero></Hero>
-      <Defipe></Defipe>
+      {/* <Defipe></Defipe> */}
 
       <Features></Features>
       <DemoVideo></DemoVideo>

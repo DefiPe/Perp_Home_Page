@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/footer.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   function openInNewTab(url) {
@@ -12,11 +13,16 @@ const Footer = () => {
       <footer className={styles.footerDiv}>
         <div className={styles.footer}>
           <div className={styles.footerLogoBox}>
-            <Image src="/defipe-logo-1.png" alt="Defi Logo" width={100} height={50} />
-            <p>
+            <Image
+              src="/defipe-logo-1.png"
+              alt="Defi Logo"
+              width={100}
+              height={50}
+            />
+            {/* <p>
               Trade whatever you like,
               <br /> whatever you want...
-            </p>
+            </p> */}
             <div className={styles.socialIcons}>
               <Image
                 src="https://defipe.b-cdn.net/LinkedIn.svg"
@@ -55,10 +61,9 @@ const Footer = () => {
 
           <div className={styles.footerSection}>
             <h4>Company</h4>
-            <a>Trade</a>
-            <a>About Us</a>
-            <a>Blog</a>
-            <a>FAQ's</a>
+            <Link href="https://test.defipe.io/" rel="noopener noreferrer" target="_blank"> Trade</Link>
+            <Link href="https://blog.defipe.io/" rel="noopener noreferrer" target="_blank"> Blog</Link>
+            <Link href="#faq">FAQ's</Link>
           </div>
 
           <div className={styles.footerSection}>
@@ -73,9 +78,9 @@ const Footer = () => {
       <div
         style={{
           height: "1px",
-          width: "95%",
-          backgroundColor: "#EFF0F6",
-          margin: "auto"
+          width: "85%",
+          backgroundColor: "rgb(18, 18, 18)",
+          margin: "auto",
         }}
       ></div>
       <div className={styles.bottomFooter}>

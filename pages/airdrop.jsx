@@ -103,7 +103,7 @@ export default function Airdrop() {
                   className={styles.inputBox}
                   name="Twitter"
                 />
-                <label>Enter Your post Re-tweet url</label>
+                <label>Enter Your Re-tweet URL</label>
                 <input
                   type="text"
                   className={styles.inputBox}

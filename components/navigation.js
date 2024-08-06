@@ -12,11 +12,27 @@ export default function Navigation() {
 
   return (
     <>
-    <div className={styles.productHunt}>
-          <div className={styles.header}>
-            <h3>We are launching on product hunt on 9th Aug 🚀 </h3>
-          </div>
-    </div>
+      <div className={styles.productHunt}>
+        <div className={styles.header}>
+          <h3>We are launching on Product Hunt on 9th Aug</h3>
+          <Link
+            href="https://www.producthunt.com/products/defipe"
+            rel="noopener noreferrer"
+            target="_blank"
+            style={{
+              border: "0.1px solid whitesmoke",
+              borderRadius: "0.4rem",
+              backgroundColor: "rgba(255, 255, 255, 0.174)",
+              width: "8rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Vote Us! 🚀
+          </Link>
+        </div>
+      </div>
       <nav className={styles.navbar}>
         <Link href="/">
           <Image
@@ -27,13 +43,13 @@ export default function Navigation() {
             height={50} // Adjust the height according to your needs
           />
         </Link>
-       
+
         <div className={styles.navMiddle}>
           <Link href="https://test.defipe.io/">Trade</Link>
           <Link href="https://blog.defipe.io/">Blogs</Link>
-          <Text 
-            gradient={{ from: '#a1ff0a', to: '#ff6000' }} 
-            animateTo={{ to: '#bc00dd', from: '#6a00f4' }} 
+          <Text
+            gradient={{ from: "#a1ff0a", to: "#ff6000" }}
+            animateTo={{ to: "#bc00dd", from: "#6a00f4" }}
             animationDuration={4000}
             className={styles.navText}
           >
