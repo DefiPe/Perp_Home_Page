@@ -11,82 +11,33 @@ export default function Airdrop() {
   const [telegram, setTelegram] = useState("");
   const [isChecked, setIsChecked] = useState(false);
 
-  const handleSubmit = async () => {
 
-
-    if (!isChecked) {
-      alert("Please confirm that you have provided the correct links.");
-      return;
-    }
-
-    // try {
-    //   const response = await axios.post("/api/submit", {
-    //     erc20,
-    //     twitter,
-    //     telegram
-    //   });
-
-    //   if (response.data.status === "success") {
-    //     alert("Data submitted successfully!");
-    //   } else {
-    //     alert("Error submitting data!");
-    //   }
-    // } catch (error) {
-    //   console.error("Error submitting data:", error);
-    //   alert("Error submitting data!");
-    // }
-  };
-
-
-  const handleACSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submitted")
-    const abc = document.querySelector("form")
-    console.log("fhhf ", abc)
-
-    const formData = new FormData(abc);
-    console.log("form ", formData)
-
-
-    if (!isChecked) {
-      alert("Please confirm that you have provided the correct links.");
-      return;
-    }
-
-    // try {
-    //   const response = await axios.post("/api/submit", {
-    //     erc20,
-    //     twitter,
-    //     telegram
-    //   });
-
-    //   if (response.data.status === "success") {
-    //     alert("Data submitted successfully!");
-    //   } else {
-    //     alert("Error submitting data!");
-    //   }
-    // } catch (error) {
-    //   console.error("Error submitting data:", error);
-    //   alert("Error submitting data!");
-    // }
-  };
+    const res = await axios.post("/api/sheet", {
+      Wallet: e.target.Wallet.value,
+      Twitter: e.target.Twitter.value,
+      RetweetURL: e.target.RetweetURL.value,
+      Telegram: e.target.Telegram.value
+    })
+    console.log(res);
+  }
 
   return (
     <>
       <div className={styles.background}>
         <div className={styles.header}>
-          <SparklesText text="DeFiPe Airdrop" className={styles.head} />
+          <SparklesText text="DefiPe Airdrop" className={styles.head} />
           <p>
             🚀 Get ready for our token launch and exclusive airdrop! <br />{" "}
-            we’re giving away tokens worth a whopping <span>$10,000</span> worth
-            of tokens to our amazing community! 🌟
+            We're giving away a prize pool of <span>$300,000</span> worth of FIPE tokens to our amazing community! 🌟
           </p>
         </div>
         <div className={styles.content}>
           <div className={styles.leftContent}>
-            <p style={{ marginBottom: "2rem", marginTop: "2rem" }}>
+            {/* <p style={{ marginBottom: "2rem", marginTop: "2rem" }}>
               Tasks to be <span style={{ color: "white" }}>followed</span> :
-            </p>
+            </p> */}
             <div className={styles.allTasks}>
               <div className={styles.task}>
                 <div className={styles.taskNumber}>Task 1</div>
@@ -110,64 +61,44 @@ export default function Airdrop() {
                 </div>
               </div>
             </div>
-            <div className={styles.inputs}>
-              <label>Enter Your ERC20 Address</label>
-              <input
-                type="text"
-                className={styles.inputBox}
-                value={erc20}
-                name="Wallet"
-                onChange={(e) => setErc20(e.target.value)}
-              />
-              <label>Enter Your Twitter Handle</label>
-              <input
-                type="text"
-                className={styles.inputBox}
-                value={twitter}
-                name="Twitter"
-                onChange={(e) => setTwitter(e.target.value)}
-              />
-              <label>Enter Your post Re-tweet url</label>
-              <input
-                type="text"
-                className={styles.inputBox}
-                value={erc20}
-                name="Wallet"
-                onChange={(e) => setErc20(e.target.value)}
-              />
-              <label>Enter Your Telegram Handle</label>
-              <input
-                type="text"
-                className={styles.inputBox}
-                value={telegram}
-                name="Telegram"
-                onChange={(e) => setTelegram(e.target.value)}
-              />
-            </div>
-            <div className={styles.declaration}>
-              <input
-                type="checkbox"
-                id="confirmation"
-                checked={isChecked}
-                onChange={(e) => setIsChecked(e.target.checked)}
-              />
-              <label htmlFor="confirmation" className={styles.declarationText}>
-                I confirm that I have provided the correct links and information.
-              </label>
-            </div>
-            <Button className={styles.submitButton} onClick={handleSubmit}>
-              Submit
-            </Button>
+            <form onSubmit={handleSubmit}>
+              <div className={styles.inputs}>
+                <label>Enter Your ERC20 Address</label>
+                <input
+                  type="text"
+                  className={styles.inputBox}
+                  name="Wallet"
+
+                />
+                <label>Enter Your Twitter Handle</label>
+                <input
+                  type="text"
+                  className={styles.inputBox}
+                  name="Twitter"
+                />
+                <label>Enter Your post Re-tweet url</label>
+                <input
+                  type="text"
+                  className={styles.inputBox}
+                  name="RetweetURL"
+                />
+                <label>Enter Your Telegram Handle</label>
+                <input
+                  type="text"
+                  className={styles.inputBox}
+                  name="Telegram"
+                />
+              </div>
+              <Button className={styles.submitButton} type="submit">
+                Submit
+              </Button>
+
+              {/* <Button radius="full" className={styles.submitButton} type="submit">
+                Button
+              </Button> */}
+            </form>
           </div>
         </div>
-
-
-        <form name="form" onSubmit={(e) => handleACSubmit(e)}>
-          <input placeholder="Name" name="Name" type="text" />
-          <input placeholder="Email" name="Email" type="text" />
-          <input name="button" type="submit" />
-        </form>
-
         <Newsletter />
       </div>
     </>
