@@ -135,7 +135,7 @@
 }
 .button {
   margin: 0 1rem; /* Adjusted the margin between the buttons */
-  padding: 0.7rem 1.2rem; /* Adjusted the padding for the buttons */
+  /* padding: 0.7rem 1.2rem;  */
   font-size: 1rem; /* Adjusted the font size for the buttons */
   border: none; /* Remove default button border */
   cursor: pointer; /* Add pointer cursor */
@@ -166,9 +166,11 @@
 .button:last-child {
   display: flex;
   width: 10.3rem;
-  padding: 1rem 1.8rem 1rem 1.4rem;
-  align-items: flex-start;
-  gap: 12px;
+  padding: 1rem 1.4rem 1rem 1.4rem;
+  /* height: 2rem; */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   border-radius: 48px;
   background: radial-gradient(
       70.71% 70.71% at 50% 50%,

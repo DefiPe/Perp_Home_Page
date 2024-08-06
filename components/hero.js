@@ -94,7 +94,7 @@ export default function Hero() {
               width={20}
               height={20}
             />
-            Air Drop
+            AirDrop
           </Link>
           {/* </button> */}
         </div>

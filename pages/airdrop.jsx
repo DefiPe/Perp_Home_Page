@@ -4,6 +4,8 @@ import styles from "@/styles/airdrop.module.css";
 import Newsletter from "../components/newsletter";
 import SparklesText from "@/components/magicui/sparkels-text";
 import { Button } from "@nextui-org/react";
+import { toast,ToastContainer } from "react-toastify";
+import Link from "next/link";
 
 export default function Airdrop() {
   const [erc20, setErc20] = useState("");
@@ -21,7 +23,31 @@ export default function Airdrop() {
       Telegram: e.target.Telegram.value
     })
     console.log(res);
-  }
+
+    if (res.status === 200) {
+      toast.success("Get ready for the results, stay tuned 🎊", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else {
+      toast.error("Something went wrong, please try again.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
+  } 
 
   return (
     <>
@@ -43,21 +69,22 @@ export default function Airdrop() {
                 <div className={styles.taskNumber}>Task 1</div>
                 <div className={styles.taskContent}>
                   <div className={styles.taskList}>Follow our official Twitter Account</div>
-                  <Button className={styles.taskBtton} href="https://x.com/DefiPeio">Follow</Button>
+                  <Link className={styles.taskBtton} href="https://x.com/DefiPeio" rel="noopener noreferrer" target="_blank">Follow</Link>
                 </div>
               </div>
               <div className={styles.task}>
                 <div className={styles.taskNumber}>Task 2</div>
                 <div className={styles.taskContent}>
                   <div className={styles.taskList}>Re-tweet our pinned post on twitter</div>
-                  <Button className={styles.taskBtton}>Retweet now</Button>
+                  <Link className={styles.taskBtton}  href="https://x.com/DefiPeio/status/1820734389187485856" rel="noopener noreferrer" target="_blank">Retweet now</Link>
+                  
                 </div>
               </div>
               <div className={styles.task}>
                 <div className={styles.taskNumber}>Task 3</div>
                 <div className={styles.taskContent}>
                   <div className={styles.taskList}>Join our telegram channel</div>
-                  <Button className={styles.taskBtton} href="https://telegram.me/helloDefiPe">Join Now</Button>
+                  <Link className={styles.taskBtton} href="https://telegram.me/helloDefiPe" rel="noopener noreferrer" target="_blank">Join Now</Link>
                 </div>
               </div>
             </div>
@@ -97,6 +124,19 @@ export default function Airdrop() {
                 Button
               </Button> */}
             </form>
+            <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          // transition:Bounce
+        />
           </div>
         </div>
         <Newsletter />

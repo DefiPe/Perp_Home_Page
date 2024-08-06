@@ -177,6 +177,10 @@
     order: -1;
   }
 
+  .leftContent {
+    width: 100%;
+  }
+
   .leftContent p {
     font-size: 1.5rem;
   }

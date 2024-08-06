@@ -14,7 +14,7 @@ export default function Navigation() {
     <>
     <div className={styles.productHunt}>
           <div className={styles.header}>
-            <h3>We are launching on product hunt on 9th August 🚀 </h3>
+            <h3>We are launching on product hunt on 9th Aug 🚀 </h3>
           </div>
     </div>
       <nav className={styles.navbar}>
@@ -37,7 +37,7 @@ export default function Navigation() {
             animationDuration={4000}
             className={styles.navText}
           >
-            <Link href="/airdrop">Win $10k</Link>
+            <Link href="/airdrop">AirDrop</Link>
           </Text>
         </div>
         {/* <button className={styles.connectButton}>Join Waitlist</button> */}
