@@ -14,8 +14,26 @@ export default function Navigation() {
     <>
       <div className={styles.productHunt}>
         <div className={styles.header}>
-          <h3>We are launching on Product Hunt on 9th Aug</h3>
-          <Link
+          <p>We are launching on <Link
+            href="https://www.producthunt.com/products/defipe"
+            rel="noopener noreferrer"
+            target="_blank"
+            style={{
+              border: "0.1px solid whitesmoke",
+              borderRadius: "0.4rem",
+              backgroundColor: "rgba(255, 255, 255, 0.174)",
+              // width: "8rem",
+              padding:"0px 0.4rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              margin:"0rem 0.4rem",
+
+            }}
+          >
+            Product Hunt🚀
+          </Link> on 23rd Aug!</p>
+          {/* <Link
             href="https://www.producthunt.com/products/defipe"
             rel="noopener noreferrer"
             target="_blank"
@@ -30,7 +48,7 @@ export default function Navigation() {
             }}
           >
             Vote Us! 🚀
-          </Link>
+          </Link> */}
         </div>
       </div>
       <nav className={styles.navbar}>
