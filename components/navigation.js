@@ -6,9 +6,9 @@ import Text from "@carefully-coded/react-text-gradient";
 import Image from "next/image";
 
 export default function Navigation() {
-  function openInNewTab(url) {
-    window.open(url, "_blank").focus();
-  }
+  // function openInNewTab(url) {
+  //   window.open(url, "_blank").focus();
+  // }
 
   return (
     <>
@@ -32,7 +32,7 @@ export default function Navigation() {
             }}
           >
             Product Hunt🚀
-          </Link> on 23rd Aug!</p>
+          </Link> on 30th Aug!</p>
           {/* <Link
             href="https://www.producthunt.com/products/defipe"
             rel="noopener noreferrer"
