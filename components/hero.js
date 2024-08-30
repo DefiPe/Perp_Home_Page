@@ -7,10 +7,18 @@ export default function Hero() {
   return (
     <>
       <div className={styles.container}>
-        {/* <div className={styles.magicButton}>
-          <Image src="/magic.svg" alt="Icon" className={styles.icon} width={50} height={50} />
-          <p>Perpetual Trading is on its way</p>
-        </div> */}
+        <a
+          href="https://www.producthunt.com/posts/defipe-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-defipe&#0045;2"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=472178&theme=dark"
+            alt="DefiPe - Get profit from NFTs without buying or selling them | Product Hunt"
+            style={{ width: "15rem", height: "3rem", margin:"2.5rem auto 0.5rem auto" }}
+            width="250"
+            height="54"
+          />
+        </a>
         <div className={styles.heroh1}>
           <h1>
             Get profit from NFTs

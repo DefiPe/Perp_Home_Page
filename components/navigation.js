@@ -12,45 +12,7 @@ export default function Navigation() {
 
   return (
     <>
-      <div className={styles.productHunt}>
-        <div className={styles.header}>
-          <p>We are launching on <Link
-            href="https://www.producthunt.com/products/defipe"
-            rel="noopener noreferrer"
-            target="_blank"
-            style={{
-              border: "0.1px solid whitesmoke",
-              borderRadius: "0.4rem",
-              backgroundColor: "rgba(255, 255, 255, 0.174)",
-              // width: "8rem",
-              padding:"0px 0.4rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              margin:"0rem 0.4rem",
-
-            }}
-          >
-            Product Hunt🚀
-          </Link> on 30th Aug!</p>
-          {/* <Link
-            href="https://www.producthunt.com/products/defipe"
-            rel="noopener noreferrer"
-            target="_blank"
-            style={{
-              border: "0.1px solid whitesmoke",
-              borderRadius: "0.4rem",
-              backgroundColor: "rgba(255, 255, 255, 0.174)",
-              width: "8rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            Vote Us! 🚀
-          </Link> */}
-        </div>
-      </div>
+     
       <nav className={styles.navbar}>
         <Link href="/">
           <Image
