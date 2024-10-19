@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/hero.module.css";
 import Link from "next/link";
+import Safari from "@/components/magicui/safari";
 
 export default function Hero() {
   return (
@@ -114,6 +115,13 @@ export default function Hero() {
             width={500}
             height={500}
           />
+    {/* <div className={styles.overlayImage}>
+      <Safari
+        url="magicui.design"
+        className="size-full"
+        src="https://via.placeholder.com/1200x750"
+      />
+    </div> */}
           <Image
             src="https://defipe.b-cdn.net/overlay1.svg"
             alt="Overlay Image"

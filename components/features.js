@@ -29,7 +29,7 @@ export default function features() {
           <Image src="https://defipe.b-cdn.net/f2.svg" alt="Image 2" width={500} height={500} />
           <h3>Many markets with Low Trading Fee</h3>
           <p>
-            Trade on crypto, Nfts, or any synthetic stocks as per your wish.
+            Trade on NFTs and Meme Coins as per your wish.
             With only Maker's 0.02% fee and Taker's 0.04% fee
           </p>
         </div>
@@ -37,8 +37,7 @@ export default function features() {
           <Image src="https://defipe.b-cdn.net/f3.svg" alt="Image 3" width={500} height={500} />
           <h3>High-speed trading with deep liquidity</h3>
           <p>
-            Only you have full control over your funds. Trade without the worry
-            of gas fees.
+          Experience fast transactions and high liquidity for a seamless trading.
           </p>
         </div>
         <div className={styles.card}>

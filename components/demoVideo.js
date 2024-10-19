@@ -1,8 +1,13 @@
 import styles from '../styles/DemoVideo.module.css';
+import ShineBorder from "@/components/magicui/shine-border";
 
 export default function DemoVideo() {
     return (
         <>
+        {/* <ShineBorder
+      className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
+      color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+    > */}
             <div className={styles.videoContainer}>
                 <div className={styles.head}>
                     <h3>How it works?</h3>
@@ -19,6 +24,7 @@ export default function DemoVideo() {
                     ></iframe>
                 </div>
             </div>
+            {/* </ShineBorder> */}
         </>
     );
 }
