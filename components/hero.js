@@ -80,7 +80,7 @@ export default function Hero() {
         <div className={styles.heroButtons}>
           <button className={styles.button}>
             <Link
-              href="https://test.defipe.io/"
+              href="https://test.defipe.io/trade/milady-eth"
               style={{ display: "flex", alignItems: "center", gap: "11px" }}
             >
               <Image
@@ -96,15 +96,7 @@ export default function Hero() {
             className={styles.button}
             onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}
           > */}
-          <Link className={styles.button} href="/airdrop">
-            <Image
-              src="https://defipe.b-cdn.net/gift.svg"
-              alt="Community"
-              width={20}
-              height={20}
-            />
-            AirDrop
-          </Link>
+          
           {/* </button> */}
         </div>
         <div className={styles.background}>

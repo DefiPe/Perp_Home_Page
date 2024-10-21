@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../styles/navbar.module.css";
 import Link from "next/link";
 import HamMenu from "./hammenu";
-import Text from "@carefully-coded/react-text-gradient";
 import Image from "next/image";
 
 export default function Navigation() {
@@ -25,19 +24,12 @@ export default function Navigation() {
         </Link>
 
         <div className={styles.navMiddle}>
-          <Link href="https://test.defipe.io/">Trade</Link>
+          <Link href="https://test.defipe.io/trade/milady-eth">Trade</Link>
           <Link href="https://blog.defipe.io/">Blogs</Link>
-          <Text
-            gradient={{ from: "#a1ff0a", to: "#ff6000" }}
-            animateTo={{ to: "#bc00dd", from: "#6a00f4" }}
-            animationDuration={4000}
-            className={styles.navText}
-          >
-            <Link href="/airdrop">AirDrop</Link>
-          </Text>
+            <Link href="https://test.defipe.io/">Fipe Club</Link>
         </div>
         {/* <button className={styles.connectButton}>Join Waitlist</button> */}
-        <Link href="https://test.defipe.io/">
+        <Link href="https://test.defipe.io/trade/milady-eth">
           <button className={styles.connectButton}>Launch app</button>
         </Link>
       </nav>
