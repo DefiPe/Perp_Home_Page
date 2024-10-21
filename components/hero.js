@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/hero.module.css";
 import Link from "next/link";
 import Safari from "@/components/magicui/safari";
+import { RainbowButton } from "@/components/magicui/rainbow-button";
 
 export default function Hero() {
   return (
@@ -78,7 +79,7 @@ export default function Hero() {
           </div>
         </div>
         <div className={styles.heroButtons}>
-          <button className={styles.button}>
+          <RainbowButton>
             <Link
               href="https://test.defipe.io/trade/milady-eth"
               style={{ display: "flex", alignItems: "center", gap: "11px" }}
@@ -91,7 +92,7 @@ export default function Hero() {
               />
               Trade Now
             </Link>
-          </button>
+            </RainbowButton>
           {/* <button
             className={styles.button}
             onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}
