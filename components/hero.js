@@ -101,13 +101,13 @@ export default function Hero() {
           {/* </button> */}
         </div>
         <div className={styles.background}>
-          <Image
+          {/* <Image
             src="https://defipe.b-cdn.net/hero.svg"
             alt="Background"
             className={styles.backgroundImage}
             width={500}
             height={500}
-          />
+          /> */}
     {/* <div className={styles.overlayImage}>
       <Safari
         url="magicui.design"
@@ -115,6 +115,7 @@ export default function Hero() {
         src="https://via.placeholder.com/1200x750"
       />
     </div> */}
+          <img src="/back.png" className={styles.backgroundImage}></img>
           <Image
             src="https://defipe.b-cdn.net/overlay1.svg"
             alt="Overlay Image"
@@ -123,6 +124,7 @@ export default function Hero() {
             height={500}
           />
         </div>
+        
       </div>
     </>
   );

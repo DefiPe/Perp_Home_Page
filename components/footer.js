@@ -10,6 +10,7 @@ const Footer = () => {
 
   return (
     <>
+    {/* <img src="/space.png" styles={styles.backgroundImage}></img> */}
       <footer className={styles.footerDiv}>
         <div className={styles.footer}>
           <div className={styles.footerLogoBox}>

@@ -23,9 +23,9 @@ interface ShineBorderProps {
  * @param className defines the class name to be applied to the component
  * @param children contains react node elements.
  */
-export function ShineBorder({
+export default function ShineBorder({
   borderRadius = 8,
-  borderWidth = 1,
+  borderWidth = 5,
   duration = 14,
   color = "#000000",
   className,

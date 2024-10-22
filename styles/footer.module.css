@@ -9,6 +9,15 @@
   margin: auto;
   border-radius: 50px 50px 0px 0px;
 }
+.backgroundImage{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 100rem;
+}
 
 .footer {
   width: 100%;

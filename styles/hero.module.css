@@ -90,10 +90,10 @@
   font-family: "Raleway";
   font-style: normal;
   line-height:150%; /* 67.2px */
-  background: linear-gradient(91deg, #FA7E7E 2.26%, #7D19D3 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(80deg, #F83A3A 10%, #F13DD4 50%, #7000FF 90%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   font-size: 3.8rem;
   font-weight: 700;
   /* line-height: 88px; */
@@ -131,7 +131,7 @@
   display: flex;
   justify-content: center; /* Center the buttons horizontally */
   align-items: center;
-  margin: 1rem 0; /* Adjusted the margin between heroTexts and heroButtons */
+  margin: 2rem 0px 1rem 0px; /* Adjusted the margin between heroTexts and heroButtons */
 }
 .button {
   margin: 0 1rem; /* Adjusted the margin between the buttons */
@@ -196,12 +196,14 @@
 }
 
 .backgroundImage {
-  width: 100%;
+  width:100%;
   height: auto;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  margin-top: -25rem;
+  
 }
 
 .overlayImage {

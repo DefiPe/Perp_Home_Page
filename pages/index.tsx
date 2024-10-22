@@ -12,8 +12,8 @@ import MarqueeDemo from "@/components/magicui/marqueeDiv";
 import { AnimatedDiv } from "@/components/magicui/animatedDiv";
 import DemoVideo from "../components/demoVideo";
 import { NftView } from "@/components/magicui/orbiting-div";
-//import Defipe from "@/components/defipe";
-
+//import Defipe from "@/components/defipe"
+import Gamification from "../components/gamification";
 // import { Button } from "@/@/ui/button";
 // //import { Button } from "@/components/ui/button";
 
@@ -63,10 +63,13 @@ export default function Home() {
       {/* <Defipe></Defipe> */}
 
       <Features></Features>
+      <Gamification></Gamification>
       <DemoVideo></DemoVideo>
+     
       {/* <GlobeDemo></GlobeDemo> */}
       {/* <NftView></NftView> */}
       <MarqueeDemo></MarqueeDemo>
+      
       <AnimatedDiv></AnimatedDiv>
       <FaqFeature></FaqFeature>
       <Newsletter></Newsletter>

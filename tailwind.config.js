@@ -29,6 +29,17 @@ module.exports = {
         "color-5": "hsl(var(--color-5))",
       },
       keyframes: {
+        shine: {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
         rainbow: {
           "0%": { "background-position": "0%" },
           "100%": { "background-position": "200%" },
@@ -68,6 +79,7 @@ module.exports = {
         },
       },
       animation: {
+        shine: "shine var(--duration) infinite linear",
         rainbow: "rainbow var(--speed, 2s) infinite linear",
 
         "accordion-down": "accordion-down 0.2s ease-out",

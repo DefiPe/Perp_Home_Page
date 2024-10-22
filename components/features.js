@@ -43,7 +43,7 @@ export default function features() {
         <div className={styles.card}>
           <Image src="https://defipe.b-cdn.net/f4.svg" alt="Image 4" width={500} height={500} />
           <h3>Fully decentralized and Open source</h3>
-          <p>Secured by Zero Knowledge Proofs and Validium</p>
+          <p>Secured by Cosmos Ecosystem</p>
         </div>
       </div>
 
