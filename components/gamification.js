@@ -10,8 +10,8 @@
                 <h1>Level up your Trading Experience</h1>
                 </div>
                 <div className={styles.subHeader}>
-                Mirror the way your mind works by associating notes through backlinks.<br />
-                Reflect builds you a second brain that you can reference anytime.
+                Earn Fipe points by completing tasks and challenges in a fun, gamified experience<br />
+                Boost your score and climb the leaderboard as you unlock new rewards
                 </div>
                 <div className={styles.card}>
                     
