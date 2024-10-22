@@ -67,7 +67,7 @@ const MarqueeDemo = () => {
 
   return (
     <div className={styles.header}>
-      <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20 md:shadow-xl bg-black">
+      <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20 md:shadow-xl bg-black" style={{ backgroundColor: "#030014" }}>
         {error ? (
           <div className="text-red-500">{error}</div>
         ) : (

@@ -188,34 +188,33 @@ background-clip: text;
   display: flex;
   justify-content: center;
   align-items: flex-end; /* Align the image to the bottom */
-  width: auto;
-  height: 30rem;
-  /* background-image: url("../public/hero.svg");
-    object-fit: cover;
-    background-repeat: no-repeat; */
+  width: 100%; /* Make it fully responsive */
+  height: 30rem; /* Set a base height */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .backgroundImage {
-  width:100%;
-  height: auto;
+  width: 100%; /* Ensure the image takes the full width */
+  height: auto; /* Maintain aspect ratio */
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   margin-top: -25rem;
-  
 }
 
 .overlayImage {
   width: 50%; /* Adjust the size of the overlay image */
-  max-width: 1000px; /* Set a maximum width if needed */
+  max-width: 1000px;
   height: auto;
-  position: absolute; /* Use absolute positioning */
-  top: 65%; /* Adjust the percentage to move the image further down */
-  left: 50%; /* Center the image horizontally */
-  transform: translate(-50%, -50%); /* Center the image vertically */
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
+
 
 .feature {
   width: 100%; /* Adjust the size of the overlay image */
@@ -340,27 +339,19 @@ background-clip: text;
     margin-bottom: 2rem;
   }
 
-  .overlayImage {
-    width: 80%; /* Adjust the size of the overlay image */
-    max-width: 1000px; /* Set a maximum width if needed */
-    height: auto;
-    position: absolute; /* Use absolute positioning */
-    top: 150px; /* Adjust the percentage to move the image further down */
-    left: 50%; /* Center the image horizontally */
-    transform: translate(-50%, -50%); /* Center the image vertically */
-    z-index: 2;
-  }
-
-  .backgroundImage {
-    height: 100%;
-  }
-
-  .background {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Align the image to the bottom */
-    width: auto;
-    height: 20rem;
+  @media (max-width: 700px) {
+    .background {
+      height: 20rem; /* Reduce height for smaller screens */
+    }
+  
+    .overlayImage {
+      width: 80%; /* Increase width of overlay image on smaller screens */
+      top: 150px; /* Adjust positioning */
+    }
+  
+    .backgroundImage {
+      margin-top: 0.1rem;
+      height: 100%; /* Make the background image fill the space */
+    }
   }
 }

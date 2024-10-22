@@ -4,9 +4,6 @@ import ShineBorder from "@/components/magicui/shine-border";
 export default function DemoVideo() {
     return (
         <>
-        <div className={styles.head}>
-                    <h3>How it works?</h3>
-                </div>
                 <div className={styles.borderWrapper}>
                 <ShineBorder
       className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-black md:shadow-xl"

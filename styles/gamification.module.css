@@ -1,35 +1,68 @@
-
-
-.headImage{
+.headImage {
     display: flex;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     margin-top: -6rem;
-}
-
-.header{
+  }
+  
+  .header {
     display: flex;
     justify-content: center;
     text-align: center;
-    text-align: center;
-font-family: Raleway;
-font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: 80px; /* 111.111% */
-color: white;
-margin-top: -20rem;
-}
-
-
-.subHeader{
+    font-family: Raleway;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px; /* 111.111% */
+    color: white;
+    margin-top: -20rem;
+  }
+  
+  /* Adjust the margins and font sizes for smaller screens */
+  .subHeader {
     text-align: center;
     color: rgba(239, 237, 253, 0.70);
-text-align: center;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-}
-
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  
+  @media (max-width: 700px) {
+    .header {
+      font-size: 30px;
+      line-height: 45px; /* Adjusted for smaller screens */
+      margin-top: -10rem; /* Less margin for smaller screens */
+    }
+  
+    .subHeader {
+        margin-top: 1rem;
+      font-size: 14px;
+      line-height: 20px; /* Tighter line height for mobile screens */
+      padding: 0 20px; /* Add padding to avoid text touching the screen edges */
+    }
+  
+    .headImage {
+      margin-top: -4rem; /* Adjust image margin for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      font-size: 24px;
+      line-height: 36px;
+      margin-top: -8rem;
+    }
+  
+    .subHeader {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0 15px;
+    }
+  
+    .headImage {
+      margin-top: -3rem;
+    }
+  }
+  

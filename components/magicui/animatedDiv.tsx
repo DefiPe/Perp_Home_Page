@@ -12,14 +12,15 @@ const Circle = forwardRef<
 >(function Circle({ className, children }, ref) {
   return (
     <div
-      ref={ref}
-      className={cn(
-        "z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-darkgrey p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-        className
-      )}
-    >
-      {children}
-    </div>
+  ref={ref}
+  className={cn(
+    "z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+    className
+  )}
+  
+>
+  {children}
+</div>
   );
 });
 
@@ -41,6 +42,7 @@ export function AnimatedDiv() {
         <div
           className="relative flex w-full max-w-[500px] items-center justify-center overflow-hidden rounded-lg bg-black p-10 md:shadow-xl"
           ref={containerRef}
+          style={{ backgroundColor: "#030014" }}
         >
           <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
             <div className="flex flex-row items-center justify-between">
@@ -63,7 +65,8 @@ export function AnimatedDiv() {
                 />
               </Circle>
             </div>
-            <div className="flex flex-row items-center justify-between bg-black">
+            <div className="flex flex-row items-center justify-between bg-black" style={{ backgroundColor: "#030014" }}>
+
               <Circle ref={div2Ref} className="h-16 w-16">
                 <Image
                   src="https://defipe.b-cdn.net/cardano-ada-logo.webp"
