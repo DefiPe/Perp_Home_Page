@@ -1,83 +1,61 @@
 import React from "react";
 import styles from "../styles/feature.module.css";
 import Image from "next/image";
+import BentoGrid from "./magicui/bentoGrid";
+import BentoCard from "./magicui/bentoCard";
 
-export default function features() {
+
+const features = [
+  {
+    name: "Save your files",
+    description: "We automatically save your files as you type.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+  },
+  {
+    name: "Full text search",
+    description: "Search through all your files in one place.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+  },
+  {
+    name: "Multilingual",
+    description: "Supports 100+ languages and counting.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+  },
+  {
+    name: "Calendar",
+    description: "Use the calendar to filter your files by date.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+  },
+  {
+    name: "Notifications",
+    description:
+      "Get notified when someone shares a file or mentions you in a comment.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+  },
+];
+export default function Features() {
   return (
     <>
-      <div className={styles.header}>
-        <h2>Features</h2>
-        <p>
-          Empower your trading skills, whether you're a novice or a prothrough
-          our streamlined platform offering a clean and accessible user
-          interface.
-        </p>
-      </div>
-      <div className={styles.cardContainer}>
-        <div className={styles.card}>
-          
-
-          <Image src="https://defipe.b-cdn.net/f1.svg" alt="Image 1" width={500} height={500} />
-
-          <h3>Self-custody with the gasless transaction</h3>
-          <p>
-            Only you have full control over your funds. Trade without the worry
-            of gas fees.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image src="https://defipe.b-cdn.net/f2.svg" alt="Image 2" width={500} height={500} />
-          <h3>Many markets with Low Trading Fee</h3>
-          <p>
-            Trade on NFTs and Meme Coins as per your wish.
-            With only Maker's 0.02% fee and Taker's 0.04% fee
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image src="https://defipe.b-cdn.net/f3.svg" alt="Image 3" width={500} height={500} />
-          <h3>High-speed trading with deep liquidity</h3>
-          <p>
-          Experience fast transactions and high liquidity for a seamless trading.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image src="https://defipe.b-cdn.net/f4.svg" alt="Image 4" width={500} height={500} />
-          <h3>Fully decentralized and Open source</h3>
-          <p>Secured by Cosmos Ecosystem</p>
-        </div>
-      </div>
-
-      <div className={styles.cardContainerMob}>
-        <div className={styles.cardMob}>
-          <Image src="https://defipe.b-cdn.net/f1.svg" alt="Image 1" width={500} height={500} />
-          <h3>Self-custody with the gasless transaction</h3>
-          <p>
-            Only you have full control over your funds. Trade without the worry
-            of gas fees.
-          </p>
-        </div>
-        <div className={styles.cardMob}>
-          <Image src="https://defipe.b-cdn.net/f2.svg" alt="Image 2" width={500} height={500} />
-          <h3>Many markets with Low Trading Fee</h3>
-          <p>
-            Trade on crypto, Nfts, or any synthetic stocks as per your wish.
-            With only Maker's 0.02% fee and Taker's 0.04% fee
-          </p>
-        </div>
-        <div className={styles.cardMob}>
-          <Image src="https://defipe.b-cdn.net/f3.svg" alt="Image 3" width={500} height={500} />
-          <h3>High-speed trading with deep liquidity</h3>
-          <p>
-            Only you have full control over your funds. Trade without the worry
-            of gas fees.
-          </p>
-        </div>
-        <div className={styles.cardMob}>
-          <Image src="https://defipe.b-cdn.net/f4.svg" alt="Image 4" width={500} height={500} />
-          <h3>Fully decentralized and Open source</h3>
-          <p>Secured by Zero Knowledge Proofs and Validium</p>
-        </div>
-      </div>
+       <BentoGrid className="lg:grid-rows-3">
+      {features.map((feature) => (
+        <BentoCard key={feature?.name} name={feature?.name} description={feature?.description} href={feature?.href} cta={feature?.cta} background={feature?.background}  className={feature?.className} />
+      ))}
+    </BentoGrid>
     </>
   );
 }
