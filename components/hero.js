@@ -23,16 +23,16 @@ export default function Hero() {
         </a>
         <div className={styles.heroh1}>
           <h1>
-            Get profit from NFTs
-            <br /> without
-            <span> buying or selling</span>
+          The world's leading 
+            <br /> Exotic Perp Dex
+           
             {/* Maximize your NFTs potential <br />
             <span>without selling it!</span> */}
           </h1>
         </div>
         <div className={styles.heroh2}>
           <p>
-            Your perpetual futures dex for NFTs and Cryptos
+            Your perpetual futures dex for Crypto, NFTs, Meme coin indexes and more
             {/* {isClient && (
               <span>
                 <Typewriter
