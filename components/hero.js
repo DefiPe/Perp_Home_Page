@@ -79,11 +79,12 @@ export default function Hero() {
           </div>
         </div>
         <div className={styles.heroButtons}>
-          <RainbowButton>
-            <Link
+        <Link
               href="https://test.defipe.io/trade/milady-eth"
               style={{ display: "flex", alignItems: "center", gap: "11px" }}
             >
+          <RainbowButton style={{ display: "flex", alignItems: "center", gap: "11px", zIndex: 10 }}>
+           
               <Image
                 src="https://defipe.b-cdn.net/fire.svg"
                 alt="Button Icon 1"
@@ -91,8 +92,9 @@ export default function Hero() {
                 height={20}
               />
               Trade Now
-            </Link>
+            
             </RainbowButton>
+            </Link>
           {/* <button
             className={styles.button}
             onClick={() => openInNewTab("https://telegram.me/helloDefiPe")}
