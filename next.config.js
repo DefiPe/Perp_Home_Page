@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
 module.exports = {
-  nextConfig,
+  ...nextConfig, // Spread existing Next.js config
   images: {
     domains: ['cryptologos.cc', 'media1.giphy.com', 'defipe.b-cdn.net'], // Add other external domains you are using
   },
@@ -16,4 +16,13 @@ module.exports = {
       },
     ];
   },
-}
+  async redirects() {
+    return [
+      {
+        source: '/airdrop',
+        destination: 'https://test.defipe.io/fipe-club',
+        permanent: false, // Use true if it's a permanent redirect (HTTP 308)
+      },
+    ];
+  },
+};

@@ -24,12 +24,12 @@ export default function Navigation() {
         </Link>
 
         <div className={styles.navMiddle}>
-          <Link href="https://test.defipe.io/trade/milady-eth">Trade</Link>
+          <Link href="https://test.defipe.io/">Trade</Link>
           <Link href="https://blog.defipe.io/">Blogs</Link>
-            <Link href="https://test.defipe.io/">Fipe Club</Link>
+            <Link href="https://test.defipe.io/fipe-club">Fipe Club</Link>
         </div>
         {/* <button className={styles.connectButton}>Join Waitlist</button> */}
-        <Link href="https://test.defipe.io/trade/milady-eth">
+        <Link href="https://test.defipe.io/">
           <button className={styles.connectButton}>Launch app</button>
         </Link>
       </nav>

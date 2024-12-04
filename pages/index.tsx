@@ -37,10 +37,10 @@ export default function Home() {
           rel="stylesheet"
         />
         
-        <title>DefiPe || Perpetual trading DEX for Synthetic Assets</title>
+        <title>Defipe | Perpetual DEX for Crypto Indices </title>
         <meta
           name="description"
-          content="A perpetual trading DEX where traders can trade cryptocurrencies, NFT floor prices, and real-life assets such as synthetic stocks."
+          content="A perpetual trading DEX where traders can trade crypto indexes, NFT indexes, Meme indexes, cat meme vs. dog meme, and many more—all in one place."
         />
         <meta
           name="keywords"
@@ -49,15 +49,15 @@ export default function Home() {
 
         <meta
           property="og:title"
-          content="DefiPe || Perpetual trading DEX for Synthetic Assets"
+          content="Defipe | Perpetual DEX for crypto indexes & unique markets"
         />
         <meta
           property="og:description"
-          content="A perpetual trading DEX where traders can trade cryptocurrencies, NFT floor prices, and real-life assets such as synthetic stocks."
+          content="A perpetual trading DEX where traders can trade crypto indexes, NFT indexes, Meme indexes, cat meme vs. dog meme, and many more—all in one place."
         />
         <meta
           property="og:image"
-          content="https://defipe.b-cdn.net/social-overlay.png"
+          content="https://defipe.b-cdn.net/defipe-meta-img.png"
         />
 
         <link rel="icon" href="/favicon.ico" />

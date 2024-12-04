@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <>
       <div className={styles.container}>
-        <a
+        {/* <a
           href="https://www.producthunt.com/posts/defipe-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-defipe&#0045;2"
           target="_blank"
         >
@@ -20,19 +20,19 @@ export default function Hero() {
             width="250"
             height="54"
           />
-        </a>
+        </a> */}
         <div className={styles.heroh1}>
           <h1>
-          The world's leading 
-            <br /> Exotic Perp Dex
+          Too many coins?
+            <br /> Trade Indexes
            
             {/* Maximize your NFTs potential <br />
             <span>without selling it!</span> */}
           </h1>
         </div>
         <div className={styles.heroh2}>
-          <p>
-            Your perpetual futures dex for Crypto, NFTs, Meme coin indexes and more
+          <p style={{fontWeight:"700", width:"80%", margin:"1rem auto 4rem auto"}}>
+          Your go-to perpetual futures dex for Crypto Indexes and Unique Markets
             {/* {isClient && (
               <span>
                 <Typewriter
@@ -80,7 +80,7 @@ export default function Hero() {
         </div>
         <div className={styles.heroButtons}>
         <Link
-              href="https://test.defipe.io/trade/milady-eth"
+              href="https://test.defipe.io/"
               style={{ display: "flex", alignItems: "center", gap: "11px" }}
             >
           <RainbowButton style={{ display: "flex", alignItems: "center", gap: "11px", zIndex: 10 }}>
