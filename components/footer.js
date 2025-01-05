@@ -63,7 +63,7 @@ const Footer = () => {
           <div className={styles.footerSection}>
             <h4>Company</h4>
             <Link href="https://test.defipe.io/" rel="noopener noreferrer" target="_blank"> Trade</Link>
-            <Link href="https://blog.defipe.io/" rel="noopener noreferrer" target="_blank"> Blog</Link>
+            <Link href="https://medium.com/@defipe" rel="noopener noreferrer" target="_blank"> Blog</Link>
             <Link href="#faq">FAQ's</Link>
           </div>
 
@@ -85,7 +85,7 @@ const Footer = () => {
         }}
       ></div>
       <div className={styles.bottomFooter}>
-        <p>Copyright © 2024 DefiPe</p>
+        <p>Copyright © 2025 DefiPe</p>
       </div>
     </>
   );

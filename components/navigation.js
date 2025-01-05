@@ -25,7 +25,7 @@ export default function Navigation() {
 
         <div className={styles.navMiddle}>
           <Link href="https://test.defipe.io/">Trade</Link>
-          <Link href="https://blog.defipe.io/">Blogs</Link>
+          <Link href="https://medium.com/@defipe">Blogs</Link>
             <Link href="https://test.defipe.io/fipe-club">Fipe Club</Link>
         </div>
         {/* <button className={styles.connectButton}>Join Waitlist</button> */}
